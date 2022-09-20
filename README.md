@@ -22,7 +22,9 @@ hasta el usuario que desea cambiar la forma de disfrutar una película con la fa
 
 El equipo está compuesto por: 
 - @DFCH9503
-- @
+- @BravoArturo
+- @Dariogomez44
+- @Brianpetra
  
  
 
