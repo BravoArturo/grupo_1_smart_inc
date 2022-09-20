@@ -27,6 +27,10 @@ El equipo está compuesto por:
 - @Brianpetra
  
  Nuetros referentes de e-commerce son:
- - [amazon](https://www.amazon.com/-/es/)
+ - [Amazon](https://www.amazon.com/-/es/)
+ - [Mercado Libre](https://www.mercadolibre.com.co/)
+ - [Samsung](https://www.samsung.com/co/)
+ - [Linio](https://www.linio.com.co/)
+ - [AliExpress](https://es.aliexpress.com/)
  
 
