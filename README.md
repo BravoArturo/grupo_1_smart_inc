@@ -1,9 +1,9 @@
 #* SMART INC. Te da la bienvenida *
 
-##### ****Te pregutas ¿Quines somos?****
+##### ****Te pregutas ¿Quienes somos?****
 
-** SMART INC. ** es  una empresa dedicada a la comercialización de experiencias casi reales a travez de sus Smart tv.
- No conformes con solo llevarte a  una experiencia visual unica, te ofrecemos mejorar esa experiencia con lo mejor en el mercado de altavoces, lo cual hara que vivas unas experiencia audiovisual UNICA. 
+** SMART INC. ** es  una empresa dedicada a la comercialización de experiencias casi reales a través de sus Smart Tv's.
+No conformes con solo llevarte a  una experiencia visual única, te ofrecemos mejorar esa experiencia con lo mejor en el mercado de altavoces, lo cual hara que vivas unas experiencia audiovisual UNICA. 
  
 ![](https://zupimages.net/up/20/38/bn1e.png)
 
