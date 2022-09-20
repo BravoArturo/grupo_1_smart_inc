@@ -26,5 +26,7 @@ El equipo está compuesto por:
 - @Dariogomez44
 - @Brianpetra
  
+ Nuetros referentes de e-commerce son:
+ - [amazon](https://www.amazon.com/-/es/)
  
 
