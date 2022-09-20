@@ -21,7 +21,7 @@ hasta el usuario que desea cambiar la forma de disfrutar una película con la fa
 ![](https://www.mielectro.es/blog/wp-content/uploads/2017/02/futbol-en-TV.jpg)
 
 El equipo está compuesto por: 
-- @DFCH9503 🦾
+- @DFCH9503 🦾:racing_car:
 - @BravoArturo
 - @Dariogomez44
 - @Brianpetra
