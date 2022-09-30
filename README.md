@@ -32,5 +32,8 @@ El equipo está compuesto por:
  - [Samsung](https://www.samsung.com/co/)
  - [Linio](https://www.linio.com.co/)
  - [AliExpress](https://es.aliexpress.com/)
+
+Link a Trello:
+ -[Trello](https://trello.com/b/zo8t6scw/boardsmartstore)
  
 
