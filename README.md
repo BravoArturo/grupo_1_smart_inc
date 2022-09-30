@@ -33,7 +33,7 @@ El equipo está compuesto por:
  - [Linio](https://www.linio.com.co/)
  - [AliExpress](https://es.aliexpress.com/)
 
-Link a Trello:
- -[Trello](https://trello.com/b/zo8t6scw/boardsmartstore)
+
+ [Trello](https://trello.com/b/zo8t6scw/boardsmartstore)
  
 
