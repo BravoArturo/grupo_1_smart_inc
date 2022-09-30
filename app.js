@@ -13,3 +13,7 @@ app.listen(3000, () => {
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/views/index.html'))
 })
+
+app.get('/shoppingCar', (req, res) => {
+  res.sendFile(path.join(__dirname, '/views/shoppingCar.html'))
+})
