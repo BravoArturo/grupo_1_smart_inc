@@ -1,0 +1,105 @@
+
+:root { color: #d9d8d7 ;
+        color: #383e40;
+        color: #9fa4a6;
+        color: #5c6a73;
+        color: #01010d;
+}
+
+
+
+body{
+   /* background-color: #01010d;*/
+ 
+   
+   background-image: url(https://w0.peakpx.com/wallpaper/872/591/HD-wallpaper-pacman-gamer-high-led-logo-luz-neon-pacman-ps5.jpg)
+}
+i{
+    width: 100%;
+    object-fit: contain;
+}
+ 
+
+header{
+    
+    display: flex;
+    flex-wrap: wrap;
+    height: 36Vw;
+}
+    
+main{
+   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 9vw;
+    width: 80%;
+    left: 5%;
+    padding: 15px;
+    height: 91vw;
+    border: 2px solid #d9d8d7;
+    border-radius: 23px;
+}
+
+.fa-user-astronaut:before {
+   
+    font-size: 31vw;
+    border: 3px solid;
+    padding: 9px;
+    border-radius: 21%;
+    left: 33%;
+    top: 3%;
+    position: absolute;
+    display: flex;
+    color: #d9d8d7;
+}
+.input-user-login,.input-pass-login{
+    padding: 10px;
+    border: 2px solid;
+    position: relative;
+    border-radius: 10px;
+    border: 2px;
+
+}
+.input-pass-login{bottom: -10px;}
+
+.login-boton{
+    position: relative;
+    bottom: -7vw;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    border: 2px;
+}
+.boton-crea-cuenta{
+    position: relative;
+    bottom: -18vw;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    border: 2px;
+}
+
+.boton-olviste-contraseña{
+  
+    bottom: -14vw;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #01010d;
+    color: #d9d8d7;
+    border: 3px;
+    left: 23%;
+    width: 78%;
+    font-size: 12px;
+}
+
+.form-login{
+    color: antiquewhite ;
+    font-size: 20px;
+} 
+
+.login{
+    color: aqua;
+    font-size: 20px;
+}
