@@ -1,24 +1,47 @@
 body{
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
-    background-color: #01010D;
+    /* background-color: #01010D; */
 }
 header i{
+    height: 20%;
    color:#5C6A73 ;
 }
 header{
     height: 25%;
 }
 .sectionShoppingCar{
-    height: 60%;
+    height: 65%;
+}
+footer{
+    height: 10%;
+}
+.titleSectionShoppingCar{
+    height: 15%;
+}
+.products{
+    height: 55%;
+}
+.discountAndFinishBuy{
+    height: 30%;
 }
 .product{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     background-color:#5C6A73 ;
     margin: 2px;
+}
+.productElement{
+    max-width: 23%;
+}
+.units{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 .circleButton{
     display: flex;
@@ -26,6 +49,15 @@ header{
     align-items: center;
     border-radius: 50%;
     background-color: #383E40;
+}
+.discountContainer{
+    height: 40%;
+}
+.finishBuyContainer{
+    height: 60%;
+}
+.totalContainer{
+    height: 40%;
 }
 footer{
     height: 15%;
