@@ -8,23 +8,20 @@
 
 
 
+
 body{
-   /* background-color: #01010d;*/
- 
-   
-   background-image: url(https://w0.peakpx.com/wallpaper/872/591/HD-wallpaper-pacman-gamer-high-led-logo-luz-neon-pacman-ps5.jpg)
+    font-family: roboto,serif;
+    background-color: #ffffff;
 }
-i{
-    width: 100%;
-    object-fit: contain;
-}
+
  
 
 header{
     
     display: flex;
-    flex-wrap: wrap;
     height: 36Vw;
+    background-color: #242323;
+   
 }
     
 main{
@@ -33,73 +30,289 @@ main{
     flex-direction: column;
     position: relative;
     top: 9vw;
-    width: 80%;
-    left: 5%;
-    padding: 15px;
     height: 91vw;
-    border: 2px solid #d9d8d7;
-    border-radius: 23px;
+    background-color: #9fa4a6;
+    box-shadow: 0px 0px 20px 9px #242323;
+    width: 94%;
+    left: 4%;
+    border-radius: 10px;
+}
+.logo{
+    left: 32%;
+    width: 40%;
+    position: relative;
+    bottom: -3vw;
 }
 
-.fa-user-astronaut:before {
+
+
+.buscar {
+    width: 49%;
+    left: 32%;
+    bottom: -2vw;
+    position: relative;
+}
+
+
+.fa-search:before {
+    content: "\f002";
+    color: white;
+    Position: relative;
+    right: -50vw;
+    bottom: -22vw;
+    cursor: pointer;
+}
+  
+.fas.fa-search:before {
+    Position: relative;
+    cursor: pointer;
+    bottom: -11vw;
+    color: #d9d8d7;
+    right: -5vw;
+    font-size: 4vw;
+}
+.input-home {
+    position: relative;
+    width: 45vw;
    
-    font-size: 31vw;
-    border: 3px solid;
-    padding: 9px;
-    border-radius: 21%;
-    left: 33%;
-    top: 3%;
-    position: absolute;
-    display: flex;
+    bottom: -10VW;
+    left: 4%;
+    border-radius: 7px;
+    border: 1px solid #978675;
+    background-color: #d9d8d7;
+    cursor: pointer;
+    padding: 2vw;
+}
+
+.fa-user:before {
+    content: "\f007";
+    font-size: 15vw;
+    position: relative;
+    top: 17%;
+    left: 36%;
+    height: -12%;
     color: #d9d8d7;
 }
+.fa-shopping-cart:before {
+    content: "\f07a";
+    font-size: 7vw;
+    position: relative;
+    right: -70vw;
+    top: 10vw;
+    color: #d9d8d7;
+}
+
 .input-user-login,.input-pass-login{
     padding: 10px;
-    border: 2px solid;
+    border: 2px solid #ffffff;
     position: relative;
     border-radius: 10px;
-    border: 2px;
-
+    border: 1px solid white;
+    background-color: #d9d8d7;
+    /* color: #d9d8d7; */
+    cursor: pointer;
+    bottom: -2%;
+    width: 94%;
+    left: 2%;
 }
-.input-pass-login{bottom: -10px;}
+.input-pass-login{bottom: -4%;}
 
 .login-boton{
     position: relative;
-    bottom: -7vw;
+    bottom: -9vw;
     padding: 10px;
     position: relative;
     border-radius: 10px;
-    border: 2px;
+    /* border: 1px solid white; */
+    background-color: #d9d8d7;
+    color: #01010d;
+    cursor: pointer;
+    font-family: roboto,serif;
+    width: 96%;
+    left: 2%;
 }
+
 .boton-crea-cuenta{
     position: relative;
     bottom: -18vw;
     padding: 10px;
     position: relative;
     border-radius: 10px;
-    border: 2px;
+    border: 1px solid;
+    background-color: #d9d8d7;
+    color: #01010d;
+    font-family: roboto,serif;
+    width: 96%;
+    left: 2%;
 }
 
-.boton-olviste-contraseña{
+.olviste-contraseña{
   
     bottom: -14vw;
     padding: 10px;
     position: relative;
     border-radius: 10px;
-    background-color: #01010d;
-    color: #d9d8d7;
-    border: 3px;
-    left: 23%;
+    background-color: transparent;
+    color: #01010d;
+    /* border: 3px; */
+    text-align: end;
     width: 78%;
     font-size: 12px;
+    cursor: pointer;
+    font-family: roboto,serif;
 }
 
-.form-login{
-    color: antiquewhite ;
-    font-size: 20px;
-} 
-
-.login{
-    color: aqua;
-    font-size: 20px;
+footer{
+    background-color: #242323;
+    position: relative;
+    height: 16vw;
+    bottom: -22vw;
 }
+/*
+.ingresa-con{
+    color: white;
+    left: 30vw;
+    position: relative;
+    bottom: -9vw;
+}
+.redes {
+    width: 90%;
+    display: flex;
+
+}
+#container {
+    margin: 50px auto;
+    width: 125px;
+  }
+  
+  /* Base Style */
+  a.s3d  {
+    clear: both;
+    opacity: .8;
+    
+    border-radius:3px;
+    
+    box-shadow:0 4px 5px rgba(0,0,0,.3);
+    
+    display: inline-block !important;
+    font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
+    height: 26px;
+    margin: 0 0 10px;
+    padding: 0 10px 11px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255,255,255,.35);
+    width: 125px;
+    
+    transition: width 0.1s ease-in-out, opacity 0.1s ease-in-out, margin-left 0.1s ease-in-out, transform .3s ease-out;
+  }
+  
+ 
+  
+  a.s3d:active { transform: translateX(200px); }
+  
+ 
+  
+  /*Google */
+  a.Google{
+    border: 3px solid #60df10;
+    color: rgb(17 186 253 / 90%);
+    border-radius: 10px;
+    position: relative;
+    bottom: -11vw;
+    left: 5%;
+    width: 30%;
+  }
+  
+  a.Google:active {
+    background: #a0f16d;
+    background: linear-gradient(#a0f16d, #a0f16d);
+    cursor: pointer;
+  }
+
+  a.E-mail{
+   
+    border: 3px solid #ebef07;
+    color: #ebef07;
+    border-radius: 10px;
+    position: relative;
+    bottom: -11vw;
+    left: 8%;
+    width: 30%
+    
+  }
+  
+  a.E-mail:active {
+    background: #a0f16d;
+    background: linear-gradient(#a0f16d, #a0f16d);
+    cursor: pointer;
+   
+  }
+  
+  
+  /* Facebook */
+  a.facebook {
+    border: 3px solid #8ea4cd;
+    color: #f2f4f7;
+    /* text-shadow: 0 1px 1px rgb(159 12 12 / 35%); */
+    position: relative;
+    bottom: -11vw;
+    right: -11%;
+    border-radius: 10px;
+    /* background-color: #1488ff; */
+    width: 30%;
+    color: #0cbef3;
+  }
+  
+  a.facebook:active {
+    background: #304886;
+    background: linear-gradient(#304886, #4669ab);
+    cursor: pointer;
+ 
+*/
+}
+  
+  
+  
+ 
+  
+  
+  
+
+  /*
+  .icons.Google { background-position: -25px 0 }
+  
+  .icons.facebook { background-position: -50px 0 }
+  */
+
+  @media (min-width: 450px){
+          
+
+    .ingresa-con {
+        color: white;
+        left: 42vw;
+        position: relative;
+        bottom: -9vw;
+    }
+
+    .fa-user-astronaut:before {
+        font-size: 31vw;
+     
+        left: 8%;
+        top: 7vw;
+       
+        display: block;
+    }
+
+   /* .logo{
+        width: 51vw;
+        left: 42vw;
+     
+        top: 6vw;
+        
+        border-radius: 37px;
+        height: 33vw;
+            
+        }*/
+    }
+  
