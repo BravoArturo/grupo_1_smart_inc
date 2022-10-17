@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Inc-Index</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
     
     <!--HOJA DE ESTILO-->
+    <link rel="stylesheet" href="/css/style-index.css">
 
     <!--ICONOS FONT-AWESOME-->
     <script src="https://kit.fontawesome.com/a1420988fe.js" crossorigin="anonymous"></script>
@@ -15,33 +21,42 @@
 <body>
     <header>
         <div class="container-header-form">
-            <i class="fa-regular fa-gears"></i>
+            <div class="logo-header">
+                <img src="/images/LOGO.jpg" alt="logo-img">
+            </div>
             <form class="form-header">
                 <input type="text" placeholder="Buscar" class="input-header">
-                <button type="button"><i class="fa-sharp fa-solid fa-magnifying-glass fxl"></i></button>
+                <button type="button"><i class="fa-sharp fa-solid fa-magnifying-glass fa-l"></i></button>
             </form>
             <div class="account-header">
-                <i class="fa-regular fa-id-card fa-bounce"></i>
+                <i class="fa-regular fa-id-card fa-l"></i>
+                <a href="/login">Mi Cuenta</a>
             </div>
-            <i class="fa-regular fa-cart-shopping"></i>
+            <div class="productCart-header">
+                <i class="fa-solid fa-cart-shopping fa-l"></i>
+                <a href="/productCart">Mi Carrito</a>
+            </div>
         </div>
 
     </header>
 
     <main>
-        <div class="container-main-1">
+        <!-- CARRUSEL DE PRODUCTOS -->
+        <div class="container-main-carousel">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae iusto exercitationem alias illo cumque et numquam quas voluptatum ullam itaque, earum doloribus dolorem. Blanditiis dolorem soluta veniam accusamus debitis?</p>
-            <i class="fa-regular fa-gears"></i>
+            <i class="fa-solid fa-gears"></i>
         </div>
+
+        <!-- LOGOS DE CONDICIONES -->
         <div class="container-main-logos">
 
             <div class="child-main-logos">
-                <i class="fa-regular fa-truck-fast"></i>
+                <i class="fa-solid fa-truck-fast"></i>
                 <p class="main-logos-p">Envío gratis en todos los productos</p>
             </div>
 
             <div class="child-main-logos">
-                <i class="fa-solid fa-arrows-to-eye"></i>
+                <i class="fa-solid fa-globe"></i>
                 <p class="main-logos-p">Seguimiento en línea</p>
             </div>
 
@@ -51,30 +66,31 @@
             </div>
 
             <div class="child-main-logos">
-                <i class="fa-regular fa-phone-volume"></i>
+                <i class="fa-solid fa-phone-volume"></i>
                 <p class="main-logos-p">Venta telefónica</p>
-                <p class="main-logos-phone">01-810-000-SMART</p>
+                <p class="main-logos-p-bold">01-810-000-SMART</p>
             </div>
         </div>
 
+        <!-- CONTAINER DE PRODUCTOS -->
         <div class="container-main-products">
             <div class="child-main-products">
-                <i class="fa-regular fa-tv"></i>
+                <i class="fa-solid fa-tv"></i>
                 <p class="main-products-p">Producto 1</p>
             </div>
 
             <div class="child-main-products">
-                <i class="fa-regular fa-tv"></i>
+                <i class="fa-solid fa-tv"></i>
                 <p class="main-products-p">Producto 2</p>
             </div>
 
             <div class="child-main-products">
-                <i class="fa-regular fa-tv"></i>
+                <i class="fa-solid fa-tv"></i>
                 <p class="main-products-p">Producto 3</p>
             </div>
 
             <div class="child-main-products">
-                <i class="fa-regular fa-tv"></i>
+                <i class="fa-solid fa-tv"></i>
                 <p class="main-products-p">Producto 4</p>
             </div>
 
@@ -84,6 +100,52 @@
 
 
     <footer>
+        <!-- CONTANINER LOGO FOOTER -->
+        <div class="footer-logo">
+            <div class="footer-logo-img">
+                <img src="/images/LOGO.jpg" alt="logo-img">
+            </div>
+            <div class="footer-logo-social">
+                <i class="fa-brands fa-square-facebook fa-l"></i>
+                <i class="fa-brands fa-square-instagram fa-l"></i>
+                <i class="fa-brands fa-square-youtube fa-l"></i>
+                <i class="fa-brands fa-square-twitter fa-l"></i>
+                <i class="fa-brands fa-linkedin-in fa-l"></i>
+            </div>
+        </div>
+
+        <div class="footer-client-contact">
+            <div class="footer-client-p">
+                <p>Atención al cliente</p>
+                <p class="client-p-bold">0800 122 SMART</p>
+                <p class="client-p-bold">0810 999 SMART</p>
+                <p>Lu-Vie 9:00 - 18:00</p>
+                <p>Sáb 9:00 - 13:00</p>
+                <p class="client-p-bold">cobranzas@smart.com.ar</p>
+            </div>
+        </div>
+
+        <!-- <div class="footer-client-email">
+            <div class="footer-client-p">
+                <p>Contactanos via e-mail</p>
+                <p class="client-p-bold">cobranzas@smart.com.ar</p>
+            </div>
+        </div> -->
+
+        <div class="footer-client-corporate">
+            <div class="footer-client-p">
+                <p>Servicios a empresas</p>
+                <p class="client-p-bold">Ventas corporativas</p>
+            </div>
+        </div>
+
+        <div class="footer-client-info">
+            <div class="footer-client-p">
+                <p class="client-p-bold">NOSOTROS</p>
+            </div>
+        </div>
+
+        
 
     </footer>
 </body>
