@@ -153,3 +153,35 @@ justify-content: space-around;
 footer{
     height: 15%;
 }
+@media(min-width: 769px){
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: space-around;
+        justify-content: center;
+    }
+    .titleSectionShoppingCar{
+        display: none;
+    }
+    .products{
+        height: 100%;
+        width: 45%;
+    }
+    .discountAndFinishBuy{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 45%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .discountContainer{
+        height: 44%;
+        width: 90%;
+    }
+    .finishBuyContainer{
+        height: 44%;
+        width: 90%;
+    }
+}
