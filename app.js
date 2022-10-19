@@ -1,8 +1,8 @@
 const express = require('express')
 const path = require('path')
-
 const app = express()
 const publicPath = path.join(__dirname, '/public')
+const routeShoppingCar = require('./routes/shoppingCar')
 
 app.use(express.static(publicPath))
 
@@ -14,6 +14,4 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/views/index.html'))
 })
 
-app.get('/shoppingCar', (req, res) => {
-  res.sendFile(path.join(__dirname, '/views/shoppingCar.html'))
-})
+app.use('/shoppingCar', routeShoppingCar)

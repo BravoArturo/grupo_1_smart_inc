@@ -1,14 +1,7 @@
-const express = require("express");
-const controller = require("../controllers/shoppingCarController");
-const path = require("path");
+const express = require('express')
+const router = express.Router()
+const controller = require('../controllers/shoppingCarController')
 
-const app = express();
-const publicPath = path.join(__dirname, "/public");
+router.get('/', controller.index)
 
-app.use(express.static(publicPath));
-
-app.listen(3000, () => {
-  console.log("Servidor OK en puerto 3000");
-});
-
-app.get("/shoppingCar", controller.index);
+module.exports = router
