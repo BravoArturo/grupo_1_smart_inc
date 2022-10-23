@@ -7,7 +7,7 @@ const publicPath = path.join(__dirname, '/public')
 app.use(express.static(publicPath))
 
 app.listen(3000, () => {
-  console.log('Servidor OK en puerto 3000')
+  console.log('Servidor OK en puerto','http://localhost:3000')
 })
 
 app.get('/', (req, res) => {
@@ -18,6 +18,6 @@ app.get('/login',(req,res)=>{
   res.sendFile(path.join(__dirname,'/views/login.html'))
 });
 
-app.get('/productCart',(req,res)=>{
-  res.sendFile(path.join(__dirname,'/views/productCart.html'))
+app.get('/shoppingCar',(req,res)=>{
+  res.sendFile(path.join(__dirname,'/views/shoppingCar.html'))
 });

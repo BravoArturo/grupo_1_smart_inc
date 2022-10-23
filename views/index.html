@@ -19,7 +19,7 @@
     <!-- <link rel="stylesheet" href="/css/all.css"> -->
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="container-header-form">
             <div class="logo-header">
                 <img src="/images/LOGO.jpg" alt="logo-img">
@@ -38,14 +38,73 @@
             </div>
         </div>
 
+    </header> -->
+
+    <header>
+        <div>
+            <img class="logo-smart-inc" src="/images/LOGO.jpg" alt="Logo Smart Inc">
+            <nav>
+                <ul class="navegation-bar" type="none">
+                    <li><a href="#"><i class="fa-solid fa-user"></i>Mi Cuenta</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="ubication">
+            <i class="fa-solid fa-location-dot"></i><p>[ Dirección ]</p>
+        </div>
     </header>
 
     <main>
         <!-- CARRUSEL DE PRODUCTOS -->
+        <!-- CAROUSEL - https://www.w3schools.com/howto/howto_js_slideshow.asp -->
         <div class="container-main-carousel">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae iusto exercitationem alias illo cumque et numquam quas voluptatum ullam itaque, earum doloribus dolorem. Blanditiis dolorem soluta veniam accusamus debitis?</p>
-            <i class="fa-solid fa-gears"></i>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="/images/SMART-TV-1.jpg" style="width:100%" alt="SMART-TV-1">
+                <div class="text">SMART-TV-1</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="/images/SOUNDBAR-1.jpg" style="width:100%" alt="SOUNDBAR-1">
+                <div class="text">SOUNDBAR-1</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="/images/HOME-THEATER-1.jpg" style="width:100%" alt="HOME-THEATER-1">
+                <div class="text">HOME-THEATER-1</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="/images/PROYECTOR-1.jpg" style="width:100%" alt="PROYECTOR-1">
+                <div class="text">PROYECTOR-1</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
         </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <!-- CAROUSEL - https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 
         <!-- LOGOS DE CONDICIONES -->
         <div class="container-main-logos">
