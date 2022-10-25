@@ -3,6 +3,7 @@ const path = require('path')
 
 const app = express()
 const publicPath = path.join(__dirname, '/public')
+const routerLogin = require('./routers/loginRoute')
 
 app.use(express.static(publicPath))
 
@@ -17,3 +18,4 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, '/views/login.html'))
 })
+app.use('/login-mobil', routerLogin)
