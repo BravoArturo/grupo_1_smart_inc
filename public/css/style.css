@@ -8,105 +8,106 @@
 
 body{
     font-family: roboto,serif;
+    height: 100vh;
+    
     
 }
-
-header{ 
-    display: flex;
-    height: 40Vw;
-    background-color: #242323;
-   
-}
-    
 main{
    
     display: flex;
     flex-direction: column;
     position: relative;
     top: 9vw;
-    height: 91vw;
+    height: 60vh;
     background-color: #9fa4a6;
     box-shadow: 0px 0px 10px 1px #383e40;
     width: 94%;
     left: 3%;
     border-radius: 10px;
 }
-.logo{
-    left: -22%;
-    width: 54vw;
-    position: relative;
-    bottom: -1vw;
-}
-
-.buscar {
-    width: 49%;
-    left: 32%;
-    bottom: -2vw;
-    position: relative;
-}
-  
-.fas.fa-search:before {
-    Position: relative;
-    cursor: pointer;
-    bottom: -12vw;
-    color: #383e40;
-    right: 28vw;
-    font-size: 5vw;
-}
-.input-home {
-    position: relative;
-    width: 70vw;
-    bottom: -18VW;
-    left: -96vw;
-    border-radius: 2vw;
-    border: 1px solid #978675;
-    background-color: #d9d8d7;
-    cursor: pointer;
-    padding: 2vw;
-    font-size: 2vw;
-}
-.fa-map-marker-alt:before {
-    content: "\f3c5";
-    color: #ff0000;
-    position: relative;
-    bottom: -32vw;
-    left: -71vw;
-    font-size: 6vw;
-}
-.direccion{
-    position: relative;
- 
-    color: #d9d8d7;
-    display: flex;
-    left: -68Vw;
-    top: 30vw;
-    font-size: 4vw;
-}
-
-.fa-user:before {
-    content: "\f007";
-    font-size: 6vw;
-    position: relative;
-    top: 18%;
-    left: 59vw;
-    height: -12%;
-    color: #d9d8d7;
-}
-.mi-cuenta{
-    color: #d9d8d7;
-    font-size: 3vw;
-    position: relative;
-    right: -1vw;
-    bottom: -6vw;
+header {
+    background-color: #242323;
     
 }
-.fa-shopping-cart:before {
-    content: "\f07a";
-    font-size: 6vw;
+
+header div {
+    display: flex;
+}
+
+header div img {
+    width: 50%;
+    margin: 2%;
+}
+
+header div nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header div nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+header div nav ul.navegation-bar li i {
+    color: white;
+    margin-right: 5px;
+    font-size: 2vw;
+}
+
+header div nav ul.navegation-bar li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+header div.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    right: -79vw;
-    top: 7vw;
-    color: #d9d8d7;
+}
+
+header div input {
+    position: relative;
+    padding: 10px;
+    width: 70%;
+    border-radius: 0.5vw;
+    border: 2px solid silver;
+    margin-bottom: 10px;
+    font-size: 1.5vw;
+}
+
+header div.search-bar div.search-icon i {
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    font-size: 1.5vw;
+}
+
+header div.ubication {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%
+}
+
+header div.ubication i {
+    margin-left: 3%;
+    color: #c92e2e;
+    font-size: 3vw;
+    display: none;
+    font-size: 2vw;
+}
+
+header div.ubication p {
+    margin-left: 2vw;
+    color: white;
+    display: none;
+    font-size: 1.5vw;
 }
 
 .input-user-login,.input-pass-login{
@@ -119,7 +120,7 @@ main{
     bottom: -2%;
     width: 80%;
     left: 8%;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 .input-pass-login{bottom: -4%;}
 
@@ -136,7 +137,7 @@ main{
     width: 84%;
     left: 8%;
     border: 1px solid;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .boton-crea-cuenta{
@@ -152,7 +153,7 @@ main{
     width: 84%;
     left: 8%;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .olviste-contraseña{
@@ -164,40 +165,165 @@ main{
     background-color: transparent;
     color: #242323;
     text-align: end;
-    font-size: 2vw;
+    font-size: 1.5vw;
     cursor: pointer;
     font-family: roboto,serif;
 }
 
-body footer {
-    background-color: #9fa4a6;
+footer{
+  /*  border: 3px solid darkgreen; */
     display: flex;
-    justify-content: center;
-    border-top: 1px solid rgb(138, 136, 136);
-    bottom: -28vw;
-    position: relative;
+    justify-content: space-around;
+    background-color: var(--fondo-logo);
+    padding: 0.8rem 0rem;position: relative;
+    bottom: -18vh;
+    background-color: #242323;
+    height: 20vh;
+    color: #d9d8d7;
 }
 
-footer div h3 {
-    font-size:3vw;
-    display: flex;
-    justify-content: center;
+.footer-logo{
+  /*  border: 3px dashed lightslategray;*/ 
+    width: 49.5%;
 }
 
-footer div p {
-    font-size: 2vw;
-    display: flex;
-    justify-content: center;
+
+.footer-logo-img img{
+    width: 100%;
 }
 
+.footer-logo-social{
+    /* border: 3px dotted red; */
+    display: flex;
+    justify-content: center;
+    color: var(--color5);
+}
+
+.footer-logo-social i{
+    padding: 0.2rem;
+}
+
+.footer-client-contact{
+    /* border: 3px dashed darkorchid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49.5%;
+    font-size: 1.5vw;
+}
+
+.footer-client-corporate{
+    /* border: 3px dashed darkorchid;*/
+    display: none;
+
+}
+
+.footer-client-info{
+    /* border: 3px dashed darkorchid; */
+    display: none;
+}
+
+.footer-client-p{
+    /* border: 3px dotted darkorange; */
+    color: var(--color5);
+}
+
+.client-p-bold{
+    font-weight: bold;
+}
 
 
 @media (min-width: 500px){
     .olviste-contraseña, .boton-crea-cuenta, 
     .login-boton, .input-user-login,.input-pass-login, 
     .input-home {
+        border-radius: 0.5vw;
+    }
+    header div.ubication p, header div.ubication i{
+        display: block;
+    }
+
+    .fasfa-search {
+        color: #242323;
+        top: -8.5vw;
+        position: relative;
+        left: 7vw;
+    }
+
+    header div.search-bar div.search-icon i {
+        position: absolute;
+        right: 25%;
+        top: -12vh;
+        color: #242323
+    }
+    main {
+        top: 4vw;
+        width: 50%;
+        height: 66vh;
+        left: 25%;   
         border-radius: 1vw;
     }
+    .input-pass-login {
+        bottom: -9%;
+    }
+   
+    /***  heard***/
+
+    header { 
+        height: 22vw;
+    }
+    header div nav ul {
+        justify-content: space-evenly;
+        width: 27%;
+        position: relative;
+        right: -47vw;
+    }
+
     
+    header div input {
+        width: 48%;
+        top: -6vw;
+        left: 1vw;
+    }
+    header div img {
+        width: 30%;
+    }
+    /* FOOTER */
+
+    footer {
+        bottom: -38vh;
+         height: 20vw;
+    }
+    .footer-client-contact{
+        justify-content: flex-start;
+    }
+    .footer-logo{
+        width: 24.5%;
+        font-size: 1.5vw;
+    }
+
+    .footer-client-contact{
+        width: 24.5%;
+        font-size: 1.5vw;
+    }
+
+    .footer-client-corporate{
+        display: flex;
+        justify-content: center;
+        width: 24.5%;
+        font-size: 1.5vw;
+        display: block;
+    }
+
+    .footer-client-info{
+        display: flex;
+        justify-content: center;
+        width: 24.5%;
+        font-size: 1.5vw;
+        display: block;
+    }
+
+
 }
+
   
