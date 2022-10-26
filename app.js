@@ -5,6 +5,7 @@ const publicPath = path.join(__dirname, '/public')
 const routeShoppingCar = require('./routes/shoppingCar')
 
 app.use(express.static(publicPath))
+app.set('view engine', 'ejs')
 
 app.listen(3000, () => {
   console.log('Servidor OK en puerto 3000')
