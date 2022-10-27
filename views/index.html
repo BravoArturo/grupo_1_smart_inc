@@ -134,22 +134,26 @@
         <!-- CONTAINER DE PRODUCTOS -->
         <div class="container-main-products">
             <div class="child-main-products">
-                <i class="fa-solid fa-tv"></i>
+                <!-- <i class="fa-solid fa-tv"></i> -->
+                <img src="/images/SMART-TV-1.jpg" alt="SMART-TV-1">
                 <p class="main-products-p">Producto 1</p>
             </div>
 
             <div class="child-main-products">
-                <i class="fa-solid fa-tv"></i>
+                <!-- <i class="fa-solid fa-tv"></i> -->
+                <img src="/images/SOUNDBAR-1.jpg" alt="SOUNDBAR-1">
                 <p class="main-products-p">Producto 2</p>
             </div>
 
             <div class="child-main-products">
-                <i class="fa-solid fa-tv"></i>
+                <!-- <i class="fa-solid fa-tv"></i> -->
+                <img src="/images/HOME-THEATER-1.jpg" alt="HOME-THEATER-1">
                 <p class="main-products-p">Producto 3</p>
             </div>
 
             <div class="child-main-products">
-                <i class="fa-solid fa-tv"></i>
+                <!-- <i class="fa-solid fa-tv"></i> -->
+                <img src="/images/PROYECTOR-1.jpg" alt="PROYECTOR-1">
                 <p class="main-products-p">Producto 4</p>
             </div>
 
@@ -204,8 +208,45 @@
             </div>
         </div>
 
-        
-
     </footer>
+
+<!-- SCRIPT DE https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+
+    <script>
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+
+
+    </script>
+
+
 </body>
 </html>

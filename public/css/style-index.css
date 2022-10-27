@@ -115,13 +115,14 @@ header div.ubication p {
 /* MAIN */
 
 main{
-    border: 3px solid darkblue;
+    /* border: 3px solid darkblue; */
     background-color: var(--color5);
 }
 
 .container-main-carousel{
-    border: 3px dashed red;
+    /* border: 3px dashed red; */
     /* color: red; */
+    background-color: var(--color5);
 }
 
 /* CAROUSEL - https://www.w3schools.com/howto/howto_js_slideshow.asp */
@@ -132,12 +133,12 @@ main{
     position: relative;
     margin: auto;
 }
-  
+
   /* Hide the images by default */
 .mySlides {
     display: block;
 }
-  
+
 
   /* Next & previous buttons */
 .prev, .next {
@@ -147,25 +148,26 @@ main{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: var(--color4);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-  
+
   /* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-  
+
   /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+    color: var(--color3);
 }
-  
+
   /* Caption text */
 .text {
     color: var(--color1);
@@ -176,7 +178,7 @@ main{
     width: 100%;
     text-align: center;
 }
-  
+
   /* Number text (1/3 etc) */
 .numbertext {
     color: var(--color1);
@@ -185,14 +187,14 @@ main{
     position: absolute;
     top: 0;
 }
-  
+
 
 /* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-  
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
@@ -209,8 +211,8 @@ main{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
+}
+
 .active, .dot:hover {
     background-color: #717171;
 }
@@ -219,45 +221,53 @@ main{
 
 
 .container-main-logos{
-    border: 3px dashed skyblue;
+    /* border: 3px dashed skyblue; */
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-around; */
     /* background-color: var(--color5); */
+    padding: 1rem;
 }
 
 .child-main-logos{
-    border: 3px dotted lightslategrey;
+    /* border: 3px dotted lightslategrey; */
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
 .main-logos-p{
-    border: 3px dotted darkcyan;
+    /* border: 3px dotted darkcyan; */
     text-align: center;
 }
 
 .main-logos-p-bold{
-    border: 3px dotted darkmagenta;
+    /* border: 3px dotted darkmagenta; */
     font-weight: bold;
+    padding: 0rem 0.5rem;
 }
 
 .container-main-products{
-    border: 3px dashed sienna;
+    /* border: 3px dashed sienna; */
     /* display: flex;
     justify-content: space-around;
     flex-wrap: wrap; */
-    /* background-color: var(--color5); */
+    background-color: var(--color5);
 
 }
 
 .child-main-products{
-    border: 3px dotted lightslategrey;
+    /* border: 3px dotted lightslategrey; */
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 0rem 0.5rem;
     
+}
+
+.child-main-products img{
+    width: 100%;
 }
 
 /* FOOTER */
