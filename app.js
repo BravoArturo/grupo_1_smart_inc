@@ -6,13 +6,8 @@ const routeShoppingCar = require('./routes/shoppingCar')
 
 app.use(express.static(publicPath))
 app.set('view engine', 'ejs')
+app.use('/shoppingCar', routeShoppingCar)
 
 app.listen(3000, () => {
   console.log('Servidor OK en puerto 3000')
 })
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/views/index.html'))
-})
-
-app.use('/shoppingCar', routeShoppingCar)

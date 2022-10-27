@@ -23,12 +23,10 @@ const productos = [
     price: 5000,
   },
 ]
+
 const controller = {
   index: (req, res) => {
     res.render('shoppingCar', { productos: productos })
-  },
-  bienvenido: (req, res) => {
-    res.render('index')
   },
 }
 
