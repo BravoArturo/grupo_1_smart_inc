@@ -1,0 +1,17 @@
+        <article class="product">
+          <img
+            src=<%= producto.imgSource%>
+            class="productElement"
+            alt="Image of product"
+          />
+          <div class="description productElement"><%= producto.description%> </div>
+          <div class="units productElement">
+            <button class="circleButton">-</button>
+            <div class="unitNumber">300</div>
+            <button class="circleButton">+</button>
+          </div>
+          <div class="price productElement">
+            <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+            <%= producto.price%>
+          </div>
+        </article>
