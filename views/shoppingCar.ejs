@@ -4,7 +4,9 @@
 <%- include('./partials/head', {title: 'Shopping Car'})  %>
 
 <body>
-  <header>
+  <%- include('./partials/header')  %>
+
+  <!-- <header>
     <div class="topHeader">
       <img class="logo" src="/images/logo.jpg" alt="logo" />
       <div class="secureSite">
@@ -15,7 +17,7 @@
       </div>
     </div>
     <img class="banner" src="/images/banner.jpg" alt="banner" />
-  </header>
+  </header> -->
   <main>
     <div class="titleSectionShoppingCar">Mi carrito</div>
     <section class="products">
@@ -44,9 +46,8 @@
       </article>
     </section>
   </main>
-  <footer>
-    <!-- <div>Footer</div> -->
-  </footer>
+  <%- include('./partials/footer')  %>
+
 </body>
 
 </html>
