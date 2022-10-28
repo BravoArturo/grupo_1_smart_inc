@@ -4,7 +4,7 @@ body{
     font-family: 'Roboto Serif', serif;
     /* background-color: #01010D; */
 }
-header i{
+/* header i{
     height: 20%;
     color:#D9D8D7;
 }
@@ -12,18 +12,18 @@ header{
     background-color: #242323;
     color: #D9D8D7;
     height: 15%;
-}
+} */
 button{
     background-color: #242323;
     color: #D9D8D7;
 }
-.topHeader{
+/* .topHeader{
     display: flex;
     padding-left: 3%;
     padding-right: 3%;
     flex-direction: row;
     height: 70%;
-}
+} */
 .banner{
     max-height: 30%;
     width: 100%;
@@ -52,9 +52,9 @@ button{
 main{
     height: 70%;
 }
-footer{
+/* footer{
     height: 10%;
-}
+} */
 .titleSectionShoppingCar{
     height: 5%;
 }
