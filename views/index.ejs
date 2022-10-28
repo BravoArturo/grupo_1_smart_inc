@@ -1,65 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Inc-Index</title>
+<html lang="es">
 
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
-    
-    <!--HOJA DE ESTILO-->
-    <link rel="stylesheet" href="/css/style-index.css">
+    <%- include('./partials/head', {title: 'INDEX', css:["/css/style-index.css"]})  %>
 
-    <!--ICONOS FONT-AWESOME-->
-    <script src="https://kit.fontawesome.com/a1420988fe.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="/css/all.css"> -->
-</head>
 <body>
-    <!-- <header>
-        <div class="container-header-form">
-            <div class="logo-header">
-                <img src="/images/LOGO.jpg" alt="logo-img">
-            </div>
-            <form class="form-header">
-                <input type="text" placeholder="Buscar" class="input-header">
-                <button type="button"><i class="fa-sharp fa-solid fa-magnifying-glass fa-l"></i></button>
-            </form>
-            <div class="account-header">
-                <i class="fa-regular fa-id-card fa-l"></i>
-                <a href="/login">Mi Cuenta</a>
-            </div>
-            <div class="productCart-header">
-                <i class="fa-solid fa-cart-shopping fa-l"></i>
-                <a href="/productCart">Mi Carrito</a>
-            </div>
-        </div>
 
-    </header> -->
 
-    <header>
-        <div>
-            <img class="logo-smart-inc" src="/images/LOGO.jpg" alt="Logo Smart Inc">
-            <nav>
-                <ul class="navegation-bar" type="none">
-                    <li><a href="#"><i class="fa-solid fa-user"></i>Mi Cuenta</a></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar productos">
-            <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </div>
-        <div class="ubication">
-            <i class="fa-solid fa-location-dot"></i><p>[ Dirección ]</p>
-        </div>
-    </header>
+<%- include('./partials/header') %> 
 
     <main>
         <!-- CARRUSEL DE PRODUCTOS -->
@@ -162,53 +109,7 @@
     </main>
 
 
-    <footer>
-        <!-- CONTANINER LOGO FOOTER -->
-        <div class="footer-logo">
-            <div class="footer-logo-img">
-                <img src="/images/LOGO.jpg" alt="logo-img">
-            </div>
-            <div class="footer-logo-social">
-                <i class="fa-brands fa-square-facebook fa-l"></i>
-                <i class="fa-brands fa-square-instagram fa-l"></i>
-                <i class="fa-brands fa-square-youtube fa-l"></i>
-                <i class="fa-brands fa-square-twitter fa-l"></i>
-                <i class="fa-brands fa-linkedin-in fa-l"></i>
-            </div>
-        </div>
-
-        <div class="footer-client-contact">
-            <div class="footer-client-p">
-                <p>Atención al cliente</p>
-                <p class="client-p-bold">0800 122 SMART</p>
-                <p class="client-p-bold">0810 999 SMART</p>
-                <p>Lu-Vie 9:00 - 18:00</p>
-                <p>Sáb 9:00 - 13:00</p>
-                <p class="client-p-bold">cobranzas@smart.com.ar</p>
-            </div>
-        </div>
-
-        <!-- <div class="footer-client-email">
-            <div class="footer-client-p">
-                <p>Contactanos via e-mail</p>
-                <p class="client-p-bold">cobranzas@smart.com.ar</p>
-            </div>
-        </div> -->
-
-        <div class="footer-client-corporate">
-            <div class="footer-client-p">
-                <p>Servicios a empresas</p>
-                <p class="client-p-bold">Ventas corporativas</p>
-            </div>
-        </div>
-
-        <div class="footer-client-info">
-            <div class="footer-client-p">
-                <p class="client-p-bold">NOSOTROS</p>
-            </div>
-        </div>
-
-    </footer>
+<%- include('./partials/footer') %> 
 
 <!-- SCRIPT DE https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 
