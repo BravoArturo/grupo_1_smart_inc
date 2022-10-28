@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/BravoArturo/grupo_1_smart_inc/issues"
   },
-  "homepage": "https://github.com/BravoArturo/grupo_1_smart_inc#readme"
+  "homepage": "https://github.com/BravoArturo/grupo_1_smart_inc#readme",
+  "devDependencies": {}
 }
