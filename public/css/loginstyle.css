@@ -9,16 +9,16 @@ body{
 /************MAIN*******************/
 
 main{
-   
+
     display: flex;
     height: 70%;
     width: 100%;
     align-items: center;
     justify-content: center;
     margin-bottom: 5vw
- }
+}
 
- .form-login{
+.form-login{
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -28,8 +28,8 @@ main{
     border-radius: 0.5vw;
     align-items: center;
     justify-content: space-around;
- }
- .input-user-login,.input-pass-login{
+}
+.input-user-login,.input-pass-login{
     padding: 10px;
     border: 2px solid #ffffff;
 
@@ -45,7 +45,7 @@ main{
 .login-boton{
     bottom: -9vw;
     padding: 10px;
-   
+
     border-radius: 2vw;
     background-color: #d9d8d7;
     color: #242323;
@@ -57,7 +57,7 @@ main{
 }
 
 .boton-crea-cuenta{
-  
+
     bottom: -18vw;
     padding: 10px;
     border-radius: 2vw;
@@ -71,7 +71,7 @@ main{
 }
 
 .olviste-contraseña{
-  
+
     bottom: -11vw;
     padding: 10px;
     border-radius: 2vw;
@@ -92,12 +92,12 @@ main{
 
     /**********MAIN****************/
 
-     .olviste-contraseña, .boton-crea-cuenta, 
+    .olviste-contraseña, .boton-crea-cuenta, 
     .login-boton, .input-user-login,.input-pass-login, 
     .input-home {
         border-radius: 0.5vw;
     }
-  
+
     .input-pass-login {
         bottom: -9%;
     }
@@ -116,4 +116,4 @@ main{
 }
 
 }    
- 
+
