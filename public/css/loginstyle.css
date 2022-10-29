@@ -17,7 +17,7 @@ body{
     
     header div {
         display: flex;
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
     
     header div img {
@@ -55,7 +55,7 @@ body{
         color: white;
         font-weight: bold;
         text-decoration: none;
-        font-size: 2vw;
+        font-size: 1.5vw;
         cursor: pointer;
     }
     
@@ -69,7 +69,7 @@ body{
     
     header div input {
         position: relative;
-        padding: 1.5%;
+        padding: 10px;
         width: 70%;
         border-radius: 0.5vw;
         border: 1px solid silver;
@@ -269,7 +269,7 @@ footer{
         header div.search-bar div.search-icon i {
             right: 30%;
             top: 25%;
-            right: 22vw;
+            right: 23vw;
         }
     
         header div input {
