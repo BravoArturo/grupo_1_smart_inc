@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head', {title: 'Edición y creación del producto', css:["/css/editAddProduct.css"] })  %>
+
+<body>
+  <%- include('./partials/header')  %>
+  <main>
+    <form action="/" method="POST">
+      <input class="inputText" placeholder="Nombre de producto" name="productName" type="text" id="productName">
+      <input class="inputText" placeholder="Descripción" name="description" type="text" id="description">
+      <input class="inputText" placeholder="Tamaño" name="size" type="text" id="size">
+      <input class="inputText" placeholder="Precio" name="price" type="text" id="price">
+      <select name="category">
+        <option value="tv">Smart Tv</option>
+        <option value="audio">Audio</option>
+      </select>
+      <div class="inputImage">
+        <label for="productImage">Inserte una imagen de su producto</label>
+        <input type="file" name="productImage" accept=".jpg, .png" id="productImage">
+      </div>
+      <button>
+        <% if(id){ %>
+        Editar
+        <% } else{ %>
+        Agregar
+        <% } %>
+      </button>
+    </form>
+  </main>
+  <%- include('./partials/footer')  %>
+</body>
+
+</html>
