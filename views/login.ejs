@@ -1,95 +1,25 @@
  <!DOCTYPE html>
-<html lang="en">
-   <%- include('./partials/head', {title: ''})  %>   <!--esto es el partial que remplaza a todo el head -->
+ <html lang="en">
+ <%- include('./partials/head', {title: 'Login', css:["/css/loginstyle.css"] })  %>
 
-<!-- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/loginstyle.css">  
-    <script src="https://kit.fontawesome.com/a1420988fe.js" crossorigin="anonymous"></script>
-    <enlace href="https: //fonts.googleapis.com/css2? family= Roboto & display=swap" rel="hoja de estilo"></enlace>
-    
-    <title>Smart-inc-login'</title>
-</head> -->
-   <body>
-    <%- include('./partials/header', {title: ''})  %> <!--esto es el partial que remplaza a todo el header -->
-    <!-- <header>
-        <div>
-            <img class="logo-smart-inc" src="/images/LOGO2.jpg" alt="Logo Smart Inc">
-            <nav>
-                <ul class="navegation-bar" type="none">
-                    <li><a href="#"><i class="fas fa-user"></i>  Mi Cuenta</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                </ul>
-            </nav></div>
-      
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar productos">
-            <div class="search-icon">
-                <i class="fas fa-search"></i>
-            </div>  
-        </div>
-        <div class="ubication">
-            <i class="fas fa-map-marker"></i><p>[ Dirección ]</p>
-        </div>
-    </header> -->
-    
-   
-    
-     <main> 
-        <form class ="form-login" action ="/index.html" method ="Get" >
-       <input class="input-user-login" type="text" name="Usuaria/o" placeholder="Ingresa Usuaria/o, Telefono o E-mail"/>
-      <input class="input-pass-login" type="password" name="Password" placeholder="Ingresa Password" >
-     <button  type="submit" class="login-boton" action="/index.html" method="get">Enviar</button> 
-      <a class="olviste-contraseña" href="¿Olvidaste tu contraseña?"  >¿Olvidaste tu contraseña?</a>
-      <button  type="submit" class="boton-crea-cuenta"  action="/" method=" Get" >Crea tu Cuenta</button> 
-    </form> 
-  </main> 
-     
-
- 
-      
-        <%- include('./partials/footer', {title: ''})  %> <!--esto es el partial que remplaza a todo el footer -->
-        <!-- <div class="footer-logo">
-            <div class="footer-logo-img">
-                <img src="/images/LOGO2.jpg" alt="logo-img">
-            </div>
-            <div class="footer-logo-social">
-                <i class="fa-brands fa-square-facebook fa-l"></i>
-                <i class="fa-brands fa-square-instagram fa-l"></i>
-                <i class="fa-brands fa-square-youtube fa-l"></i>
-                <i class="fa-brands fa-square-twitter fa-l"></i>
-                <i class="fa-brands fa-linkedin-in fa-l"></i>
-            </div>
-        </div>
- 
-         <div class="footer-client-contact">
-            <div class="footer-client-p">
-                <p>Atención al cliente</p>
-                <p class="client-p-bold">0800 122 SMART</p>
-                <p class="client-p-bold">0810 999 SMART</p>
-                <p>Lu-Vie 9:00 - 18:00</p>
-                <p>Sáb 9:00 - 13:00</p>
-                <p class="client-p-bold">cobranzas@smart.com.ar</p>
-            </div>
-        </div>
-<div class="footer-client-corporate">
-            <div class="footer-client-p">
-                <p>Servicios a empresas</p>
-                <p class="client-p-bold">Ventas corporativas</p>
-            </div>
-        </div>
-
-        <div class="footer-client-info">
-            <div class="footer-client-p">
-                <p class="client-p-bold">NOSOTROS</p>
-            </div>
-        </div>
+ <body>
+   <%- include('./partials/header')  %>
+   <!--esto es el partial que remplaza a todo el header -->
+   <main>
+     <form class="form-login" action="/index.html" method="Get">
+       <input class="input-user-login" type="text" name="Usuaria/o" placeholder="Ingresa Usuaria/o, Telefono o E-mail" />
+       <input class="input-pass-login" type="password" name="Password" placeholder="Ingresa Password">
+       <button type="submit" class="login-boton" action="/index.html" method="get">Enviar</button>
+       <a class="olviste-contraseña" href="¿Olvidaste tu contraseña?">¿Olvidaste tu contraseña?</a>
+       <button type="submit" class="boton-crea-cuenta" action="/" method=" Get">Crea tu Cuenta</button>
+     </form>
+   </main>
 
 
 
-    </footer>  -->
-</body>
 
-</html> 
+   <%- include('./partials/footer', {title: ''})  %>
+   <!--esto es el partial que remplaza a todo el footer -->
+ </body>
+
+ </html>

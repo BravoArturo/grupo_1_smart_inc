@@ -4,7 +4,9 @@
   "description": "**SMART INC.** es una empresa dedicada a la comercialización de experiencias casi reales a través de sus Smart Tv's.\r No conformes con solo llevarte a una experiencia visual única, te ofrecemos mejorar esa experiencia con lo mejor en el mercado de altavoces, lo cual hará que vivas unas experiencia audiovisual ÚNICA.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,13 +15,7 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BravoArturo/grupo_1_smart_inc.git"
-  },
-  "bugs": {
-    "url": "https://github.com/BravoArturo/grupo_1_smart_inc/issues"
-  },
-  "homepage": "https://github.com/BravoArturo/grupo_1_smart_inc#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "2.0.20"
+  }
 }
