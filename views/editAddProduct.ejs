@@ -10,13 +10,14 @@
       <input class="inputText" placeholder="Descripción" name="description" type="text" id="description">
       <input class="inputText" placeholder="Tamaño" name="size" type="text" id="size">
       <input class="inputText" placeholder="Precio" name="price" type="text" id="price">
-      <select name="category">
+      <label for="category">Seleccione una categoría</label>
+      <select name="category" id="category">
         <option value="tv">Smart Tv</option>
         <option value="audio">Audio</option>
       </select>
       <div class="inputImage">
         <label for="productImage">Inserte una imagen de su producto</label>
-        <input type="file" name="productImage" accept=".jpg, .png" id="productImage">
+        <input class="inputFile" type="file" name="productImage" accept=".jpg, .png" id="productImage">
       </div>
       <button>
         <% if(id){ %>
