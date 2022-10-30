@@ -1,7 +1,7 @@
 {
-  "name": "smart_inc",
+  "name": "in",
   "version": "1.0.0",
-  "description": "",
+  "description": "**SMART INC.** es una empresa dedicada a la comercialización de experiencias casi reales a través de sus Smart Tv's.\r No conformes con solo llevarte a una experiencia visual única, te ofrecemos mejorar esa experiencia con lo mejor en el mercado de altavoces, lo cual hará que vivas unas experiencia audiovisual ÚNICA.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

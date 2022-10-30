@@ -1,5 +1,4 @@
 const path = require('path')
-
 // const controller = {
 //   index: (req, res) => {
 //     res.sendFile(path.join(__dirname, '../views/shoppingCar.html'))
@@ -9,7 +8,7 @@ const path = require('path')
 const productos = [
   {
     imgSource: '/images/descarga(1).jfif',
-    description: 'HOLA BRIAN',
+    description: 'descripción',
     price: 5000,
   },
   {

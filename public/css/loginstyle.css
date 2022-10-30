@@ -1,0 +1,119 @@
+
+body{
+    font-family: roboto,serif;
+    height: 100vh; 
+   /* border: 1px solid red */
+}
+
+
+/************MAIN*******************/
+
+main{
+
+    display: flex;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vw
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #9fa4a6;
+    width: 100%;
+    border-radius: 0.5vw;
+    align-items: center;
+    justify-content: space-around;
+}
+.input-user-login,.input-pass-login{
+    padding: 10px;
+    border: 2px solid #ffffff;
+
+    border-radius: 2vw;
+    background-color: #d9d8d7;
+    cursor: pointer;
+    bottom: -2%;
+    width: 80%;
+    left: 8%;
+}
+.input-pass-login{bottom: -4%;}
+
+.login-boton{
+    bottom: -9vw;
+    padding: 10px;
+
+    border-radius: 2vw;
+    background-color: #d9d8d7;
+    color: #242323;
+    cursor: pointer;
+    font-family: roboto,serif;
+    width: 80%;
+    left: 8%;
+    border: 1px solid;
+}
+
+.boton-crea-cuenta{
+
+    bottom: -18vw;
+    padding: 10px;
+    border-radius: 2vw;
+    border: 1px solid;
+    background-color: #d9d8d7;
+    color: #242323;
+    font-family: roboto,serif;
+    width: 80%;
+    left: 8%;
+    cursor: pointer;
+}
+
+.olviste-contraseña{
+
+    bottom: -11vw;
+    padding: 10px;
+    border-radius: 2vw;
+    background-color: transparent;
+    color: #242323;
+    text-align: end;
+    cursor: pointer;
+    font-family: roboto,serif;
+}
+
+
+
+.client-p-bold{
+    font-weight: bold;
+}
+
+    @media (min-width: 460px){
+
+    /**********MAIN****************/
+
+    .olviste-contraseña, .boton-crea-cuenta, 
+    .login-boton, .input-user-login,.input-pass-login, 
+    .input-home {
+        border-radius: 0.5vw;
+    }
+
+    .input-pass-login {
+        bottom: -9%;
+    }
+    
+    .fasfa-search {
+        color: #242323;
+        top: -8.5vw;
+        position: relative;
+        left: 7vw;
+    } 
+.form-login{
+
+    box-shadow: 0px 0px 10px 0px black;
+    width: 40%;
+    
+}
+
+}    
+
