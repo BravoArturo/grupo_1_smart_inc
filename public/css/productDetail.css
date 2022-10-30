@@ -1,0 +1,72 @@
+main {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main div.titulo-tv {
+    display: flex;
+    justify-content: space-around;
+    font-size: 4vw;
+    font-weight: bold;
+    background-color: #e9e7e7;
+    border-bottom: 1px solid black;
+}
+
+main div.foto-smart {
+    display: flex;
+    justify-content: center;
+}
+
+main h3 {
+    text-align: center;
+    text-decoration: overline;
+    margin-top: 10%;
+    background-color: #242323;
+    color: white;
+    padding: 5px;
+}
+
+main div.contenedor-price-button {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #998282;
+    border-bottom: 1px solid #998282;
+    background-color: #e9e7e7;
+}
+
+main p.precio {
+    font-weight: bold;
+    padding-left: 5%;
+    font-size: 6vw;
+}
+
+main div.contenedor-price-button button {
+    margin: 5%;
+    font-weight: bold;
+    background: #242323;
+    color: white;
+    border-radius: 10px;
+}
+
+main ul {
+    padding-left: 6%;
+    font-size: 4vw;
+    padding-bottom: 5%;
+}
+
+/*======================[MEDIA QUERIES TABLET]========================*/
+
+@media (min-width: 425px){
+    
+    main div.titulo-tv p.stock {
+        display: none;
+    }
+}
+
+/*======================[MEDIA QUERIES DESKTOP]========================*/
+
+@media(min-width: 768px) {
+
+    iframe {
+        display: block;
+    }
+}

@@ -5,6 +5,7 @@ const publicPath = path.join(__dirname, '/public')
 
 const routeIndex = require('./routes/index')
 const routeShoppingCar = require('./routes/shoppingCar')
+const routeProductDetail = require ('./routes/productDetail')
 
 app.use(express.static(publicPath))
 app.set('view engine', 'ejs')
@@ -30,6 +31,7 @@ app.get('/login',(req,res)=>{
 
 app.use('/', routeIndex)
 app.use('/shoppingCar', routeShoppingCar)
+app.use('/productDetail', routeProductDetail)
 
 
 
