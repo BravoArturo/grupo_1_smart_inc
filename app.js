@@ -21,7 +21,9 @@ app.use('/', routeIndex)
 app.use('/shoppingCar', routeShoppingCar)
 app.use('/productDetail', routeProductDetail)
 app.use('/register', routeRegister)
-
+app.use((re, res, next) => {
+  res.status(404).render('notFound')
+})
 app.listen(3000, () => {
   console.log('Servidor OK en puerto', 'http://localhost:3000')
 })
