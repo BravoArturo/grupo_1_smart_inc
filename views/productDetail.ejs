@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--[↓ HEAD ↓]-->
-   <%- includes('./partials/head', {title: 'Product Detail' css: ['/css/productDetail.css']}) %>
+<%- include('./partials/head', {title: 'Product Detail', css: ['/css/productDetail.css']}) %>
 <!--[↑ HEAD ↑]-->
+
 <body>
-<!--[↓ HEADER ↓]-->
-<%- includes('./partials/header') %> 
-<!--[↑ HEADER ↑]-->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jqOx32Cv-XI" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
-    <main>
-        <div class="titulo-tv" >
-            <p>Smart TV 4K Samsung 50'</p>
-            <p class="stock">[Stock 6u]</p>
-        </div>
-        <div class="foto-smart">
-            <img src="/img/smart-TV-4K-UHD-Samsung50-UN50AU7000.jpg" alt="Smart TV 4K UHD Samsung 50' UN50AU7000">
-        </div>
-        <div class="contenedor-price-button">
-            <p class="precio">$119.999 </p>
-            <button type="button">ADD TO CARR</button>
-        </div>
-        <h3>Especificaciones técnicas</h3>
-        <ul type="none">
-            <li>- Imagen: 50 pulgadas</li>
-            <li>- Resolución: 3840 x 2160</li>
-            <li>- Conectividad: HDMI, USB</li>
-            <li>- Caracteristicas Smart: Youtube, Netflix</li>
-            <li>- Sonido: MP3, AVI</li>
-        </ul>  
-    </main>
-<!--[↓ FOOTER ↓]-->
-<%- includes('./partials/footer') %>
-<!--[↑ FOOTER ↑]-->
+  <!--[↓ HEADER ↓]-->
+  <%- include('./partials/header') %>
+  <!--[↑ HEADER ↑]-->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jqOx32Cv-XI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <main>
+    <div class="titulo-tv">
+      <p>Smart TV 4K Samsung 50'</p>
+      <p class="stock">[Stock 6u]</p>
+    </div>
+    <div class="foto-smart">
+      <img src="/img/smart-TV-4K-UHD-Samsung50-UN50AU7000.jpg" alt="Smart TV 4K UHD Samsung 50' UN50AU7000">
+    </div>
+    <div class="contenedor-price-button">
+      <p class="precio">$119.999 </p>
+      <button type="button">ADD TO CARR</button>
+    </div>
+    <h3>Especificaciones técnicas</h3>
+    <ul type="none">
+      <li>- Imagen: 50 pulgadas</li>
+      <li>- Resolución: 3840 x 2160</li>
+      <li>- Conectividad: HDMI, USB</li>
+      <li>- Caracteristicas Smart: Youtube, Netflix</li>
+      <li>- Sonido: MP3, AVI</li>
+    </ul>
+  </main>
+  <!--[↓ FOOTER ↓]-->
+  <%- include('./partials/footer') %>
+  <!--[↑ FOOTER ↑]-->
 </body>
+
 </html>
