@@ -3,7 +3,7 @@ const controller = {
     res.render('products')
   },
   add: (req, res) => {
-    res.render('editAddProduct', { id: null })
+    res.render('editAddProduct')
   },
   edit: (req, res) => {
     console.log(req.params.id)
@@ -13,6 +13,9 @@ const controller = {
     res.render('productDetail')
   },
   store: (req, res) => {
+    if (req.file) {
+      console.log(req.file)
+    }
     console.log(req.body)
     res.redirect('/products')
   },
