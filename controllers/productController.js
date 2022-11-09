@@ -21,11 +21,12 @@ const controller = {
   },
   put: (req, res) => {
     console.log(req.body)
-    //res.redirect('/products')
+    res.redirect('/products')
   },
-  // delete: (req, res) => {
-  //   res.redirect('/products')
-  // },
+  delete: (req, res) => {
+    console.log('req delete', req)
+    res.redirect('/products')
+  },
 }
 
 module.exports = controller

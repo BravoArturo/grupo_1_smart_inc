@@ -7,7 +7,7 @@ main{
     height: 70%;
 }
 
-form{
+.form{
     display: flex;
     flex-direction: column;
     height: 100%;
