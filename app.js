@@ -18,7 +18,7 @@ app.use(express.static(publicPath))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(methodOVerride('_method'))
-app.use('/login-mobil', routerLogin)
+app.use('/login', routerLogin)  //DFCH9503 cambié de login-mobil a mobil para que el vínculo funcione
 app.use('/product', routeProduct)
 app.use('/', routeIndex)
 app.use('/shoppingCar', routeShoppingCar)
