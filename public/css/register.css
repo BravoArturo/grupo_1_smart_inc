@@ -31,6 +31,8 @@ body{
 main{
     /* border: 3px solid darkblue; */
     background-color: var(--color5);
+    top: -7px;
+    position: relative;
 }
 
 .register-label{
@@ -52,7 +54,7 @@ main{
     height: 100%;
     border-radius: 10px;
     background-color: var(--color3);
-    width: 60%;
+     width: 60%; 
     border-radius: 0.5vw;
     align-items: center;
     justify-content: space-around;
@@ -62,50 +64,74 @@ main{
 
 .input-name{
     padding: 0.4rem 0rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 0.5vw;
-
+     border: 2px solid #ffffff;
+    background-color: #d9d8d7; 
 }
 
 .input-user{
     padding: 0.4rem 0rem;
     border: 1px solid black;
     border-radius: 0.5vw;
-
+    /* border: 2px solid #ffffff;
+    background-color: #d9d8d7; */
 }
 
 .input-email{
     padding: 0.4rem 0rem;
     border: 1px solid black;
     border-radius: 0.5vw;
+    /* border: 2px solid #ffffff;
+    background-color: #d9d8d7; */
 }
 
 .input-password{
     padding: 0.4rem 0rem;
     border: 1px solid black;
     border-radius: 0.5vw;
+    /* border: 2px solid #ffffff;
+    background-color: #d9d8d7; */
+}
+/* input de leccion de foto */
+.input-file{
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    /* border: 2px solid #ffffff;
+    background-color: #d9d8d7; */
 }
 
-
+.input-date{
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    /* border: 2px solid #ffffff;
+    background-color: #d9d8d7; */
+  
+}
 .register-button{
     font-size: 16px;
     padding: 0.2rem;
     transition: all 0.5s;
+    /* border-radius: 0.5vw; */
 }
 
 .register-button:hover{
-    background-color: var(--Boton-submit);
-    color: var(--color5);
+    background-color: var(--Boton-submit); /*--Boton-submit: #0022AA;*/
+    color: var(--color5); 
 }
+
 
 .cancel-button{
     font-size: 16px;
     padding: 0.2rem;
     transition: all 0.5s;
+    /* border-radius: 0.5vw; */
 }
 
 .cancel-button:hover{
-    background-color: var(--Boton-reset);
+    background-color: var(--Boton-reset); /*--Boton-reset: #FA2B29;*/
     color: var(--color5);
 }
 
