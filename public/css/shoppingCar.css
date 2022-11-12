@@ -150,9 +150,9 @@ justify-content: space-around;
     justify-content: flex-end;
     width: 50%;
 }
-footer{
+ /* footer{
     height: 15%;
-}
+}  */
 @media(min-width: 769px){
     main{
         display: flex;
