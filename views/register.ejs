@@ -8,15 +8,37 @@
 <main>
     <h2 class="register-label">REGISTRATE</h2>
     <div class="father-form-register">
-    <form class="form-register" action="/index.html" method="Get">
-        <input class="input-name" type="text" name="Nombre" placeholder="Ingresa tu nombre" required />
-        <input class="input-user" type="text" name="Usuari@" placeholder="Ingresa tu usuari@" required />
-        <input class="input-email" type="email" name="email" placeholder="Ingresa tu email" required />
+        <!-- HAY QUE REVISAR EL ACTION EN EL FORM 13/11/2022 -->
+    <form class="form-register" action="/register" method="POST" enctype="multipart/form-data"> 
+        <input class="input-name" type="text" name="fullName" placeholder="Ingresa tu nombre" value="<%= locals.oldData ? oldData.fullName : null %>"/>
+        <% if (locals.errors && errors.fullName) { %>
+            <div class="text-danger">
+                <%= errors.fullName.msg %> 
+            </div>
+        <% } %>
+        <input class="input-user" type="text" name="user" placeholder="Ingresa tu usuari@" value="<%= locals.oldData ? oldData.user : null %>"/>
+        <% if (locals.errors && errors.user) { %>
+            <div class="text-danger">
+                <%= errors.user.msg %> 
+            </div>
+        <% } %>
+        <input class="input-email" type="email" name="email" placeholder="Ingresa tu email" value="<%= locals.oldData ? oldData.email : null %>"/>
+        <% if (locals.errors && errors.email) { %>
+            <div class="text-danger">
+                <%= errors.email.msg %> 
+            </div>
+        <% } %>
+        <!-- FALTA LAS LÍNEAS DE VALIDACIÓN DEL AVATAR 13/11/2022 VER userRegisterForm.ejs hecho por jh/express-validator líneas 93 - 94 -->
         <p>Sube tu foto</p>
-        <input class="input-file" type="file" name="userImage" />
-        <input class="input-password" type="password" name="Password" placeholder="Contraseña" required />
-        <button type="submit" class="register-button" action="/index.html" method="get">Confirmar</button>
-        <button type="submit" class="cancel-button" action="/" method=" Get">Cancelar</button>
+        <input class="input-file" type="file" name="avatar" />
+        <input class="input-password" type="password" name="password" placeholder="Contraseña" />
+        <% if (locals.errors && errors.password) { %>
+            <div class="text-danger">
+                <%= errors.password.msg %> 
+            </div>
+        <% } %>
+        <button type="submit" class="register-button">Confirmar</button>
+        <button type="submit" class="cancel-button">Cancelar</button>
     </form>
     </div>
 </main>

@@ -54,7 +54,7 @@ main{
     height: 100%;
     border-radius: 10px;
     background-color: var(--color3);
-     width: 60%; 
+    width: 60%; 
     border-radius: 0.5vw;
     align-items: center;
     justify-content: space-around;
@@ -64,10 +64,9 @@ main{
 
 .input-name{
     padding: 0.4rem 0rem;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     border-radius: 0.5vw;
-     border: 2px solid #ffffff;
-    background-color: #d9d8d7; 
+    /* background-color: #d9d8d7;  */
 }
 
 .input-user{
@@ -108,8 +107,8 @@ main{
     border-radius: 0.5vw;
     /* border: 2px solid #ffffff;
     background-color: #d9d8d7; */
-  
 }
+
 .register-button{
     font-size: 16px;
     padding: 0.2rem;
@@ -154,4 +153,9 @@ main{
     .input-password{
         width: 50vw;
     }
+}
+
+.text-danger{
+    color: red;
+    font-weight: bold;
 }

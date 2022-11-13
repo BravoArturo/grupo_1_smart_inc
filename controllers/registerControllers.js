@@ -1,15 +1,28 @@
 const path = require('path')
+const { validationResult } = require('express-validator');
 
 const registerController = {
 index: (req, res) => {
     res.render('register')
 },
-store: (req, res) => {
-    if (req.file) {
-        console.log(req.file)
+// store: (req, res) => {
+//     if (req.file) {
+//         console.log(req.file)
+//     }
+//     console.log(req.body)
+//     res.redirect('/')
+// },
+store:  (req, res) => {
+    const resultValidation = validationResult(req);
+    
+    if (resultValidation.errors.length > 0) {
+        return res.render('register', {
+            errors: resultValidation.mapped(),
+            oldData: req.body
+        });
     }
-    console.log(req.body)
-    res.redirect('/')
+
+    return res.send('Ok, las validaciones se pasaron y no tienes errores');
 },
 edit: (req, res) => {
     console.log(req.params.id)

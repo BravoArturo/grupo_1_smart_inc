@@ -31,10 +31,11 @@ main{
 }
 .input-user-login,.input-pass-login{
     padding: 10px;
-    border: 2px solid #ffffff;
+    /* border: 2px solid #ffffff; */
+    border: 1px solid black;
 
     border-radius: 2vw;
-    background-color: #d9d8d7;
+    /* background-color: #d9d8d7; */
     cursor: pointer;
     bottom: -2%;
     width: 80%;
