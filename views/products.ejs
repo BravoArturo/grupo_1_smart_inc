@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head', {title: 'Products', css: ['']}) %>
+  <%- include('./partials/head', {title: 'Products', css:
+  ['/css/products.css']}) %>
 
-<body>
-  Products
-</body>
-
+  <body>
+    <%- include('./partials/header') %>
+    <main>
+      <div class="productsContainer">
+        <div class="itemContainer">
+          <%-include('./partials/productProducts')%>
+        </div>
+      </div>
+      <div class="productsContainer">
+        <div class="itemContainer">
+          <%-include('./partials/productProducts')%>
+        </div>
+      </div>
+      <div class="productsContainer">
+        <div class="itemContainer">
+          <%-include('./partials/productProducts')%>
+        </div>
+      </div>
+    </main>
+    <%-include('./partials/footer')%>
+  </body>
 </html>
