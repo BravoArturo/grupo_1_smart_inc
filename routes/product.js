@@ -18,7 +18,7 @@ let multerDiskStorage = multer.diskStorage({
 let fileUpload = multer({ storage: multerDiskStorage })
 router.get('/', controller.index)
 router.get('/create', controller.add)
-router.post('/', fileUpload.single('productImage'), controller.store)
+router.post('/', fileUpload.single('image'), controller.store)
 router.get('/:id', controller.productDetail)
 router.get('/:id/edit', controller.edit)
 router.put('/:id', controller.put)

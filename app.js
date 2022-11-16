@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(methodOVerride('_method'))
 
 app.use('/login', routerLogin)
-app.use('/product', routeProduct)
+app.use('/products', routeProduct)
 app.use('/', routeIndex)
 app.use('/shoppingCar', routeShoppingCar)
 app.use('/register', routeRegister)
