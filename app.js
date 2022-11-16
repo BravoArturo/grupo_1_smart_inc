@@ -20,7 +20,7 @@ app.use('/product', routeProduct)
 app.use('/', routeIndex)
 app.use('/shoppingCar', routeShoppingCar)
 app.use('/register', routeRegister)
-//test
+//testttt
 app.use((req, res, next) => {
   res.status(404).render('notFound')
   next()
