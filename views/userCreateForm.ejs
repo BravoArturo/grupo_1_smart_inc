@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head', {title: 'userCreate', css:["/css/register.css"] })  %>
+
+<body>
+<%- include('./partials/header')  %>
+<!--esto es el partial que remplaza a todo el header -->
+<main>
+    <h2 class="register-label">Create User</h2>
+    <div class="father-form-register">
+    <form class="form-register" action="/index.html" method="Get">
+        <input class="input-name" type="text" name="Nombre" placeholder="Ingresa tu nombre" required />
+        <input class="input-date" type="date" name="Fecha" placeholder="Fecha de Nacimiento" required />
+        <input class="input-user" type="text" name="Usuari@" placeholder="Ingresa tu usuari@" required />
+        <input class="input-email" type="email" name="email" placeholder="Ingresa tu email" required />
+        <input class="input-password" type="password" name="Password" placeholder="Contraseña" required />
+        <input class="input-file" type="file" name="file" />
+        <button type="submit" class="register-button" action="/index.html" method="get">Confirmar</button>
+        <button type="submit" class="cancel-button" action="/" method=" Get">Cancelar</button>
+    </form>
+    </div>
+</main>
+
+
+
+
+<%- include('./partials/footer', {title: ''})  %>
+<!--esto es el partial que remplaza a todo el footer -->
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+[
+    {
+    "id" : 0,
+    "firstname": "Nicolas",
+    "lastname": "Heredia",
+    "email" : "nico.heredia@gmail.com",
+    "password": "nicolas123",
+    "image": "AvatarNico",
+    "category": "Admin"
+    },
+    {
+    "id" : 1,
+    "firstname": "Leonardo",
+    "lastname": "Gonzalez",
+    "email" : "leo.gonzalez@gmail.com",
+    "password": "leonardo123",
+    "image": "AvatarLeo",
+    "category": "Cliente"
+    },
+    {
+    "id" : 2,
+    "firstname": "Martin",
+    "lastname": "Diaz",
+    "email" : "martin.diaz@gmail.com",
+    "password": "martin123",
+    "image": "AvatarMartin",
+    "category": "Cliente"
+    },
+    {
+    "id" : 3,
+    "firstname": "Federico",
+    "lastname": "Gonzalez",
+    "email" : "fede.gonzalez@gmail.com",
+    "password": "federico123",
+    "image": "AvatarFede",
+    "category": "Cliente"
+    },
+    {
+    "id" : 4,
+    "firstname": "Hernan",
+    "lastname": "Gomez",
+    "email" : "hernan.gomez@gmail.com",
+    "password": "hernan123",
+    "image": "AvatarHernan",
+    "category": "Cliente"
+    }
+]

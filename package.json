@@ -19,5 +19,13 @@
   },
   "devDependencies": {
     "nodemon": "2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BravoArturo/grupo_1_smart_inc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BravoArturo/grupo_1_smart_inc/issues"
+  },
+  "homepage": "https://github.com/BravoArturo/grupo_1_smart_inc#readme"
 }

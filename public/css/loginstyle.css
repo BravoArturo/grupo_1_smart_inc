@@ -45,7 +45,6 @@ main{
 .login-boton{
     bottom: -9vw;
     padding: 10px;
-
     border-radius: 2vw;
     background-color: #d9d8d7;
     color: #242323;
@@ -54,8 +53,13 @@ main{
     width: 80%;
     left: 8%;
     border: 1px solid;
+    transition: all 0.5s;
 }
 
+.login-boton:hover{
+    background-color: #0022AA; /*--Boton-submit: #0022AA;*/
+    color: #d9d8d7;
+}
 .boton-crea-cuenta{
 
     bottom: -18vw;
@@ -68,20 +72,26 @@ main{
     width: 80%;
     left: 8%;
     cursor: pointer;
+    transition: all 0.5s;
 }
+.boton-crea-cuenta:hover{
+    background-color: #0022AA; /*--Boton-submit: #0022AA;*/
+    color: #d9d8d7; }
 
 .olviste-contraseña{
-
-    bottom: -11vw;
+    /* bottom: -11vw;
     padding: 10px;
     border-radius: 2vw;
-    background-color: transparent;
+    background-color: transparent; */
     color: #242323;
     text-align: end;
     cursor: pointer;
     font-family: roboto,serif;
+    transition: all 0.5s;
 }
-
+.olviste-contraseña:hover{
+    color:#FA2B29; /*--Boton-submit: #0022AA;*/
+     }
 
 
 .client-p-bold{
