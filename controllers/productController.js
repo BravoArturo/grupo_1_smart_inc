@@ -44,16 +44,13 @@ const controller = {
     })
   },
   delete: (req, res) => {
-    console.log('req delete', req)
-    res.redirect('/products', {
-      products: [
-        {
-          imgSource: '/images/product/SMART-TV-1.jpg',
-          name: 'QLED TV',
-          price: 5000,
-        },
-      ],
-    })
+    console.log('req delete', req.params.id)
+    let products = fs.readFileSync(productsPath, 'utf-8')
+    products = JSON.parse(products)
+    let productsFiltered = products.filter((prod) => prod.id != req.params.id)
+    console.log(productsFiltered, 'QUE ERESSSSSSS')
+    fs.writeFileSync(fileName, JSON.stringify(productsFiltered, null, ''))
+    res.redirect('/products')
   },
 }
 
