@@ -11,17 +11,17 @@
       <% } else{ %>
       <form action="/products" method="POST" enctype="multipart/form-data">
         <% } %>
-        <input class="inputText" placeholder="Nombre de producto" name="name" type="text" id="productName">
-        <input class="inputText" placeholder="Descripción" name="description" type="text" id="description">
+        <input class="inputText" placeholder="Nombre de producto" name="name" type="text" value="<%=locals.product? product.name: ''%>" id="productName">
+        <input class="inputText" placeholder="Descripción" name="description" type="text" id="description" value="<%=locals.product? product.description: ''%>">
         <div class="inputImage">
           <label for="image">Inserte una imagen de su producto</label>
           <input class="inputFile" type="file" name="image" accept=".jpg, .png" id="image">
         </div>
-        <input class="inputText" placeholder="Precio" name="price" type="text" id="price">
+        <input class="inputText" placeholder="Precio" name="price" type="text" id="price" value="<%=locals.product? product.price: ''%>">
         <label for="category">Seleccione una categoría</label>
         <select name="category" id="category">
-          <option value="tv">Smart Tv</option>
-          <option value="audio">Audio</option>
+          <option value="tv" selected="<% locals.product && product.category == 'tv' ? 'selected': '' %>">Smart Tv</option>
+          <option value="audio" selected="<% locals.product && product.category == 'audio' ? 'selected': '' %>">Audio</option>
         </select>
         <button type="submit">
           <% if(locals.id){ %>

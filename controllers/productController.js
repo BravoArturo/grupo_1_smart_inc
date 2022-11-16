@@ -14,8 +14,14 @@ const controller = {
     res.render('editAddProduct')
   },
   edit: (req, res) => {
-    console.log(req.params.id)
-    res.render('editAddProduct', { id: req.params.id })
+    let products = fs.readFileSync(productsPath, 'utf-8')
+    products = JSON.parse(products)
+    let productsToUpdate = products.filter((prod) => prod.id == req.params.id)
+    console.log(productsToUpdate[0])
+    res.render('editAddProduct', {
+      id: req.params.id,
+      product: productsToUpdate[0],
+    })
   },
   productDetail: (req, res) => {
     res.render('productDetail')
@@ -33,22 +39,13 @@ const controller = {
   },
   put: (req, res) => {
     console.log(req.body)
-    res.redirect('/products', {
-      products: [
-        {
-          imgSource: '/images/product/SMART-TV-1.jpg',
-          name: 'QLED TV',
-          price: 5000,
-        },
-      ],
-    })
+    res.redirect('/products')
   },
   delete: (req, res) => {
     console.log('req delete', req.params.id)
     let products = fs.readFileSync(productsPath, 'utf-8')
     products = JSON.parse(products)
     let productsFiltered = products.filter((prod) => prod.id != req.params.id)
-    console.log(productsFiltered, 'QUE ERESSSSSSS')
     fs.writeFileSync(fileName, JSON.stringify(productsFiltered, null, ''))
     res.redirect('/products')
   },
