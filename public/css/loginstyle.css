@@ -2,6 +2,7 @@
 body{
     font-family: roboto,serif;
     height: 100vh; 
+    width: 100%;
    /* border: 1px solid red */
 }
 
