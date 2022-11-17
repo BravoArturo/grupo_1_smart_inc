@@ -22,8 +22,7 @@ app.use('/product', routeProduct)
 app.use('/', routeIndex)
 app.use('/shoppingCar', routeShoppingCar)
 app.use('/register', routeRegister)
-// app.use('/userEditForm',routerUserEdit ) // linea intentando agregar ruta 
-// app.use('/userCreateForm', routerUserCreate)
+
 
 app.use((req, res, next) => {
   res.status(404).render('notFound')
