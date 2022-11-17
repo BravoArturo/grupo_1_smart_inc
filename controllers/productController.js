@@ -17,17 +17,23 @@ const controller = {
     let products = fs.readFileSync(productsPath, 'utf-8')
     products = JSON.parse(products)
     let productsToUpdate = products.filter((prod) => prod.id == req.params.id)
-    console.log(productsToUpdate[0])
+    // console.log(productsToUpdate[0])
     res.render('editAddProduct', {
       id: req.params.id,
       product: productsToUpdate[0],
     })
   },
   productDetail: (req, res) => {
-    res.render('productDetail')
+    let products = fs.readFileSync(productsPath, 'utf-8')
+    products = JSON.parse(products)
+    let productsToUpdate = products.filter((prod) => prod.id == req.params.id)
+    // console.log(productsToUpdate[0])
+    res.render('productDetail', {
+      product: productsToUpdate[0],
+    })
   },
   store: (req, res) => {
-    console.log(req.body)
+    // console.log(req.body)
     req.body.price = req.body.price + ' USD'
     let products = fs.readFileSync(productsPath, 'utf-8')
     products = JSON.parse(products)
