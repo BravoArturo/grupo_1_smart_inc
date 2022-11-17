@@ -7,7 +7,7 @@
   <%- include('./partials/header')  %>
   <main>
     <% if(locals.id){ %>
-    <form class="form" action="/products/<%= locals.id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
+    <form class="form" method="POST" action="/products/<%= locals.id %>?_method=PUT" enctype="multipart/form-data">
       <% } else{ %>
       <form action="/products" method="POST" enctype="multipart/form-data">
         <% } %>
@@ -40,13 +40,6 @@
       <% } %>
   </main>
   <%- include('./partials/footer')  %>
-  <script>
-    let test = document.getElementsByClassName('inputText')
-    console.log(test);
-    test[0].addEventListener('mouseover', () => {
-      test[2].style.background = 'yellow';
-    })
-  </script>
 </body>
 
 </html>

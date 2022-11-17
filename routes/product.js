@@ -21,7 +21,7 @@ router.get('/create', controller.add)
 router.post('/', fileUpload.single('image'), controller.store)
 router.get('/:id', controller.productDetail)
 router.get('/:id/edit', controller.edit)
-router.put('/:id', controller.put)
+router.put('/:id', fileUpload.single('image'), controller.put)
 router.delete('/:id', controller.delete)
 
 module.exports = router

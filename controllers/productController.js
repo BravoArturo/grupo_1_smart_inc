@@ -27,18 +27,38 @@ const controller = {
     res.render('productDetail')
   },
   store: (req, res) => {
+    console.log(req.body)
     let products = fs.readFileSync(productsPath, 'utf-8')
     products = JSON.parse(products)
     req.body.id = products[products.length - 1].id + 1
     if (req.file) {
-      req.body.image = req.file.destination
+      req.body.image = '/images/product/' + req.file.filename
     }
     products.push(JSON.parse(JSON.stringify(req.body)))
     fs.writeFileSync(fileName, JSON.stringify(products, null, ''))
     res.redirect('/products')
   },
   put: (req, res) => {
-    console.log(req.body)
+    let products = fs.readFileSync(productsPath, 'utf-8')
+    products = JSON.parse(products)
+    const id = req.params.id
+    const productToEdit = products.find((prod) => prod.id == id)
+    const editProduct = {
+      id: id,
+      name: req.body.name,
+      description: req.body.description,
+      image: req.file
+        ? '/images/product/' + req.file.filename
+        : productToEdit.image,
+      category: req.body.category,
+      price: req.body.price,
+    }
+    products.forEach((prod, index) => {
+      if (prod.id == id) {
+        products[index] = editProduct
+      }
+    })
+    fs.writeFileSync(fileName, JSON.stringify(products, null, ' '))
     res.redirect('/products')
   },
   delete: (req, res) => {
