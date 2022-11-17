@@ -9,7 +9,7 @@
     <% if(locals.id){ %>
     <form class="form" method="POST" action="/products/<%= locals.id %>?_method=PUT" enctype="multipart/form-data">
       <% } else{ %>
-      <form action="/products" method="POST" enctype="multipart/form-data">
+      <form class="form" action="/products" method="POST" enctype="multipart/form-data">
         <% } %>
         <input class="inputText" placeholder="Nombre de producto" name="name" type="text" value="<%=locals.product? product.name: ''%>" id="productName">
         <input class="inputText" placeholder="Descripción" name="description" type="text" id="description" value="<%=locals.product? product.description: ''%>">

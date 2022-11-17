@@ -28,6 +28,7 @@ const controller = {
   },
   store: (req, res) => {
     console.log(req.body)
+    req.body.price = req.body.price + ' USD'
     let products = fs.readFileSync(productsPath, 'utf-8')
     products = JSON.parse(products)
     req.body.id = products[products.length - 1].id + 1
@@ -51,7 +52,7 @@ const controller = {
         ? '/images/product/' + req.file.filename
         : productToEdit.image,
       category: req.body.category,
-      price: req.body.price,
+      price: req.body.price + ' USD',
     }
     products.forEach((prod, index) => {
       if (prod.id == id) {
