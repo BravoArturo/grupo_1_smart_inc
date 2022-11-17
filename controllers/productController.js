@@ -52,7 +52,7 @@ const controller = {
         ? '/images/product/' + req.file.filename
         : productToEdit.image,
       category: req.body.category,
-      price: req.body.price + ' USD',
+      price: req.body.price,
     }
     products.forEach((prod, index) => {
       if (prod.id == id) {

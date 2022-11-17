@@ -7,7 +7,7 @@
   <%- include('./partials/header')  %>
   <main>
     <% if(locals.id){ %>
-    <form class="form" method="POST" action="/products/<%= locals.id %>?_method=PUT" enctype="multipart/form-data">
+    <form class="formEdit" method="POST" action="/products/<%= locals.id %>?_method=PUT" enctype="multipart/form-data">
       <% } else{ %>
       <form class="form" action="/products" method="POST" enctype="multipart/form-data">
         <% } %>
@@ -32,7 +32,7 @@
         </button>
       </form>
       <% if(locals.id){ %>
-      <form action="/products/<%= locals.id %>/?_method=DELETE" method="POST" enctype="multipart/form-data">
+      <form class="formDelete" action="/products/<%= locals.id %>/?_method=DELETE" method="POST" enctype="multipart/form-data">
         <button type="submit">
           Eliminar
         </button>

@@ -18,6 +18,28 @@ main{
     align-items: center;
     justify-content: space-around;
  }
+ .formEdit{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    border-radius: 10px;
+    background-color: #9fa4a6;
+    width: 100%;
+    border-radius: 0.5vw;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .formDelete{
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #9fa4a6;
+    width: 100%;
+    border-radius: 0.5vw;
+    align-items: center;
+    justify-content: space-around;
+ }
 .inputText {
     padding: 2%;
     border: 2px solid #ffffff;
