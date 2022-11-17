@@ -42,7 +42,7 @@ const controller = {
       req.body.image = '/images/product/' + req.file.filename
     }
     products.push(JSON.parse(JSON.stringify(req.body)))
-    fs.writeFileSync(fileName, JSON.stringify(products, null, ''))
+    fs.writeFileSync(fileName, JSON.stringify(products, null, ' '))
     res.redirect('/products')
   },
   put: (req, res) => {
@@ -73,7 +73,7 @@ const controller = {
     let products = fs.readFileSync(productsPath, 'utf-8')
     products = JSON.parse(products)
     let productsFiltered = products.filter((prod) => prod.id != req.params.id)
-    fs.writeFileSync(fileName, JSON.stringify(productsFiltered, null, ''))
+    fs.writeFileSync(fileName, JSON.stringify(productsFiltered, null, ' '))
     res.redirect('/products')
   },
 }
