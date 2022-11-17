@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head', {title: 'Products', css:
+  ['/css/products.css']}) %>
+
+<body>
+  <%- include('./partials/header') %>
+  <main>
+    <% if(locals && locals.products){ %><% locals.products.map((p, index)=>{%>
+    <div class="productsContainer">
+      <div class="itemContainer">
+        <div class="productContainer">
+          <div class="product">
+            <img src="<%= locals.products[index].image %>" />
+            <div class="name"><%= locals.products[index].name %></div>
+            <div class="price">
+              <i class="fa-sharp fa-solid fa-dollar-sign"></i><%=
+                locals.products[index].price %>
+            </div>
+          </div>
+          <div class="descriptionContainer">
+            <ul class="list">
+              <li><%= locals.products[index].description %></li>
+            </ul>
+          </div>
+          <div class="buttonContainer">
+            <button>Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% }) %> <% } %>
+  </main>
+  <%-include('./partials/footer')%>
+</body>
+
+</html>

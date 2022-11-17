@@ -1,0 +1,69 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+
+.productsContainer{
+    background-color: #9fa4a6;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.product{
+    height: 60%;
+    width: 100%;
+    border-bottom: 2px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.product img{
+    width: 100%;
+    max-height: 80%;
+}
+.descriptionContainer{
+    min-height: 30%;
+    width: 100%;
+    border-bottom: 2px solid #ffffff;
+}
+
+.list li{
+    margin:0 0 3% 0;  
+}
+.buttonContainer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 10px;
+    border-radius: 2vw;
+    background-color: #d9d8d7;
+    color: #242323;
+    cursor: pointer;
+    width: 90%;
+    border: 2px solid #ffffff;
+}
+.itemContainer{
+    height: 100%;
+    width: 100%;
+    /* esto debe cambiar con el media query */
+}

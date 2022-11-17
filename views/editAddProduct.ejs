@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <%- include('./partials/head', {title: 'Edición y creación del producto', css:["/css/editAddProduct.css"] })  %>
 
 <body>
   <%- include('./partials/header')  %>
   <main>
-    <form action="/" method="POST">
-      <input class="inputText" placeholder="Nombre de producto" name="productName" type="text" id="productName">
-      <input class="inputText" placeholder="Descripción" name="description" type="text" id="description">
-      <input class="inputText" placeholder="Tamaño" name="size" type="text" id="size">
-      <input class="inputText" placeholder="Precio" name="price" type="text" id="price">
-      <label for="category">Seleccione una categoría</label>
-      <select name="category" id="category">
-        <option value="tv">Smart Tv</option>
-        <option value="audio">Audio</option>
-      </select>
-      <div class="inputImage">
-        <label for="productImage">Inserte una imagen de su producto</label>
-        <input class="inputFile" type="file" name="productImage" accept=".jpg, .png" id="productImage">
-      </div>
-      <button>
-        <% if(id){ %>
-        Editar
-        <% } else{ %>
-        Agregar
+    <% if(locals.id){ %>
+    <form class="form" method="POST" action="/products/<%= locals.id %>?_method=PUT" enctype="multipart/form-data">
+      <% } else{ %>
+      <form class="form" action="/products" method="POST" enctype="multipart/form-data">
         <% } %>
-      </button>
-    </form>
+        <input class="inputText" placeholder="Nombre de producto" name="name" type="text" value="<%=locals.product? product.name: ''%>" id="productName">
+        <input class="inputText" placeholder="Descripción" name="description" type="text" id="description" value="<%=locals.product? product.description: ''%>">
+        <div class="inputImage">
+          <label for="image">Inserte una imagen de su producto</label>
+          <input class="inputFile" type="file" name="image" accept=".jpg, .png" id="image">
+        </div>
+        <input class="inputText" placeholder="Precio" name="price" type="text" id="price" value="<%=locals.product? product.price: ''%>">
+        <label for="category">Seleccione una categoría</label>
+        <select name="category" id="category">
+          <option value="tv" selected="<% locals.product && product.category == 'tv' ? 'selected': '' %>">Smart Tv</option>
+          <option value="audio" selected="<% locals.product && product.category == 'audio' ? 'selected': '' %>">Audio</option>
+        </select>
+        <button type="submit">
+          <% if(locals.id){ %>
+          Editar producto <%= id %>
+          <% } else{ %>
+          Agregar
+          <% } %>
+        </button>
+      </form>
+      <% if(locals.id){ %>
+      <form action="/products/<%= locals.id %>/?_method=DELETE" method="POST" enctype="multipart/form-data">
+        <button type="submit">
+          Eliminar
+        </button>
+      </form>
+      <% } %>
   </main>
   <%- include('./partials/footer')  %>
 </body>
