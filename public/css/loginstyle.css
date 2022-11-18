@@ -1,3 +1,21 @@
+/* DEFINICIÓN DE COLORES */
+
+:root{
+    --color1: #01010d;
+    --color2: #5c6a73;
+    --color3: #9fa4a6;
+    --color4: #383e40;
+    --color5: #d9d8d7;
+    --fondo-logo: #242323;
+}
+
+/* SELECTOR UNIVERSAL */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 
 body{
     font-family: roboto,serif;
@@ -24,7 +42,7 @@ main{
     flex-direction: column;
     height: 100%;
     border-radius: 10px;
-    background-color: #9fa4a6;
+    background-color: var(--color3);
     width: 100%;
     border-radius: 0.5vw;
     align-items: center;
@@ -32,10 +50,9 @@ main{
 }
 .input-user-login,.input-pass-login{
     padding: 10px;
-    border: 2px solid #ffffff;
-
+    border: 1px solid black;
     border-radius: 2vw;
-    background-color: #d9d8d7;
+    /* background-color: var(--color5); */
     cursor: pointer;
     bottom: -2%;
     width: 80%;
@@ -47,8 +64,8 @@ main{
     bottom: -9vw;
     padding: 10px;
     border-radius: 2vw;
-    background-color: #d9d8d7;
-    color: #242323;
+    background-color:var(--color5);
+    color: var(--fondo-logo);
     cursor: pointer;
     font-family: roboto,serif;
     width: 80%;
@@ -59,7 +76,7 @@ main{
 
 .login-boton:hover{
     background-color: #0022AA; /*--Boton-submit: #0022AA;*/
-    color: #d9d8d7;
+    color: var(--color5);
 }
 .boton-crea-cuenta{
 
@@ -67,8 +84,8 @@ main{
     padding: 10px;
     border-radius: 2vw;
     border: 1px solid;
-    background-color: #d9d8d7;
-    color: #242323;
+    background-color: var(--color5);
+    color: var(--fondo-logo);
     font-family: roboto,serif;
     width: 80%;
     left: 8%;
@@ -77,14 +94,14 @@ main{
 }
 .boton-crea-cuenta:hover{
     background-color: #0022AA; /*--Boton-submit: #0022AA;*/
-    color: #d9d8d7; }
+    color: var(--color5); }
 
 .olviste-contraseña{
     /* bottom: -11vw;
     padding: 10px;
     border-radius: 2vw;
     background-color: transparent; */
-    color: #242323;
+    color:var(--fondo-logo);
     text-align: end;
     cursor: pointer;
     font-family: roboto,serif;
@@ -92,7 +109,7 @@ main{
 }
 .olviste-contraseña:hover{
     color:#FA2B29; /*--Boton-submit: #0022AA;*/
-     }
+}
 
 
 .client-p-bold{
@@ -114,7 +131,7 @@ main{
     }
     
     .fasfa-search {
-        color: #242323;
+        color: var(--fondo-logo);
         top: -8.5vw;
         position: relative;
         left: 7vw;
