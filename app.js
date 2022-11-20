@@ -8,12 +8,21 @@ const routeIndex = require('./routes/index')
 const routeShoppingCar = require('./routes/shoppingCar')
 const routeProduct = require('./routes/product')
 const routeRegister = require('./routes/register')
+const cookies=require('cookie-parser'); //libreria cookie-parser
+const session=require('express-session'); //libreria express-session 
+
 
 app.set('view engine', 'ejs')
 app.use(express.static(publicPath))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(methodOVerride('_method'))
+app.use(cookies());
+app.use(session({
+  secret: "It's a secret",
+  resave: false,
+  saveUninitialized:false,  
+}));
 
 app.use('/login', routerLogin)
 app.use('/products', routeProduct)

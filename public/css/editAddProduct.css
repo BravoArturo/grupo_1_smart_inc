@@ -44,7 +44,7 @@ main{
     padding: 2%;
     border: 2px solid #ffffff;
     border-radius: 2vw;
-    background-color: #d9d8d7;
+    /* background-color: #d9d8d7; */
     cursor: pointer;
     width: 80%;
 }
