@@ -1,4 +1,5 @@
 const { body } = require('express-validator');
+const path=require('path')
 
 const validations = [
 	body('fullName').notEmpty().withMessage('Tiene que escribir un nombre'),

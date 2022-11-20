@@ -8,12 +8,12 @@
 <main>
     <h2 class="register-label">REGISTRATE</h2>
     <div class="father-form-register">
-    <form class="form-register" action="/register" method="POST">
-        <input class="input-name" type="text" name="fullName" placeholder="Ingresa tu nombre" value=" <%= locals.oldData ? oldData.fullName : '' %>" />
+    <form class="form-register" action="/register" method="POST" enctype="multipart/form-data">
+        <input class="input-name" type="text" name="fullName" placeholder="Ingresa tu nombre" value="<%= locals.oldData ? oldData.fullName : '' %>" />
         <% if (locals.errors && errors.fullName) { %>
             <div class="text-danger"><%= errors.fullName.msg %> </div>
         <% } %>
-        <input class="input-user" type="text" name="userName" placeholder="Ingresa tu usuari@" value=" <%= locals.oldData ? oldData.userName : '' %>" />
+        <input class="input-user" type="text" name="userName" placeholder="Ingresa tu usuari@" value="<%= locals.oldData ? oldData.userName : '' %>" />
         <% if (locals.errors && errors.userName) { %>
             <div class="text-danger"><%= errors.userName.msg %> </div>
         <% } %>
@@ -27,6 +27,11 @@
         <% } %>
         <label for="image">Inserte su imagen de usuari@</label>
         <input class="input-file" type="file" name="avatar" id="image">
+        <% if (locals.errors && errors.avatar) { %>
+            <div class="text-danger">
+                <%= errors.avatar.msg %>
+            </div>
+        <% } %>
         <button type="submit" class="register-button">Confirmar</button>
         <!-- <button type="submit" class="cancel-button">Cancelar</button> -->
     </form>
