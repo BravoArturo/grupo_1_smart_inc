@@ -23,14 +23,25 @@ processRegister: (req,res)=>{
     }
 
     let userInDBbyEmail = User.findByField('email', req.body.email);
-    let userInDBbyuserName = User.findByField('email', req.body.userName);
+    let userInDBbyUserName = User.findByField('userName', req.body.userName);
 
-		if (userInDBbyEmail || userInDBbyuserName) {
+		if (userInDBbyEmail) {
 			return res.render('register', {
 				errors: {
 					email: {
 						msg: 'Este email ya está registrado'
 					}
+				},
+				oldData: req.body
+			});
+		}
+
+        if (userInDBbyUserName) {
+			return res.render('register', {
+				errors: {
+                    userName:{
+                        msg: 'Este nombre de usuario ya está registrado'
+                    }
 				},
 				oldData: req.body
 			});
