@@ -6,10 +6,10 @@
   <%- include('./partials/header')  %>
   <!--esto es el partial que remplaza a todo el header -->
   <main>
-    <form class="form-login" action="/index.html" method="Get">
-      <input class="input-user-login" type="text" name="userName" placeholder="Ingresa usuari@ o email" />
-      <input class="input-pass-login" type="password" name="Password" placeholder="Ingresa Password" />
-      <button type="submit" class="login-boton" href='./index.ejs' action="/index" method="GET">Entrar</button>
+    <form class="form-login" method="POST">
+      <input class="input-user-login" type="text" name="email" placeholder="Ingresa email" />
+      <input class="input-pass-login" type="password" name="password" placeholder="Ingresa password" />
+      <button type="submit" class="login-boton">Entrar</button>
       <a class="olviste-contraseña" href="/">¿Olvidaste tu contraseña?</a>
       <a href="/register"> Crea tu Cuenta</a>
     </form>

@@ -34,8 +34,8 @@ processRegister: (req,res)=>{
 				},
 				oldData: req.body
 			});
-		}
-
+		} 
+        
         if (userInDBbyUserName) {
 			return res.render('register', {
 				errors: {
@@ -46,14 +46,15 @@ processRegister: (req,res)=>{
 				oldData: req.body
 			});
 		}
-
+        
         let userToCreate = {
-			...req.body,
-			password: bcryptjs.hashSync(req.body.password, 12),
-			avatar: req.file.filename
-		}
-
+            ...req.body,
+            password: bcryptjs.hashSync(req.body.password, 12),
+            avatar: '/images/users/'+req.file.filename,
+            category: 'Cliente'
+        }
         let userCreated = User.create(userToCreate);
+
 
         return res.redirect('/login');
 

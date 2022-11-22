@@ -6,6 +6,6 @@ const controller = require('../controllers/loginController')
 router.get('/', controller.index)
 
 // Procesar el login
-router.post('/login', controller.loginProcess);
+router.post('/', controller.loginProcess);
 
 module.exports = router

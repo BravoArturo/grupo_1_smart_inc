@@ -5,40 +5,43 @@ const User = require('../models/User');
 const publicPath = path.join(__dirname, '/public')
 
 const controller = {
-  index: (req, res) => {
+index: (req, res) => {
     res.render('login')
-  },
-  loginProcess: (req, res) => {
+},
+loginProcess: (req, res) => {
 		let userToLogin = User.findByField('email', req.body.email);
 		
 		if(userToLogin) {
 			let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
 			if (isOkThePassword) {
-				delete userToLogin.password;
-				req.session.userLogged = userToLogin;
+				// delete userToLogin.password;
+				// req.session.userLogged = userToLogin;
 
-				if(req.body.remember_user) {
-					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-				}
+				// if(req.body.remember_user) {
+				// 	res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+				// }
 
-				return res.redirect('/user/profile');
+				// return res.redirect('/user/profile');
+				console.log('la contraseña es válida por email');
+				return res.send('credenciales válidas')
 			} 
-			return res.render('login', {
-				errors: {
-					email: {
-						msg: 'Las credenciales son inválidas'
-					}
-				}
-			});
+			// return res.render('login', {
+			// 	errors: {
+			// 		email: {
+			// 			msg: 'Las credenciales son inválidas'
+			// 		}
+			// 	}
+			// });
+			return res.send('credenciales inválidas')
 		}
 
-		return res.render('login', {
-			errors: {
-				email: {
-					msg: 'No se encuentra este email en nuestra base de datos'
-				}
-			}
-		});
+		// return res.render('login', {
+		// 	errors: {
+		// 		email: {
+		// 			msg: 'No se encuentra este email en nuestra base de datos'
+		// 		}
+		// 	}
+		// });
 	},
 }
 
