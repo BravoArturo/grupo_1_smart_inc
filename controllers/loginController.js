@@ -9,7 +9,8 @@ index: (req, res) => {
     res.render('login')
 },
 loginProcess: (req, res) => {
-		let userToLogin = User.findByField('email', req.body.email);
+		let userToLogin = User.findByField('email', req.body.emailOrUserName);
+		let userToLoginByUserName = User.findByField('userName', req.body.emailOrUserName);
 		
 		if(userToLogin) {
 			let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
@@ -23,8 +24,22 @@ loginProcess: (req, res) => {
 
 				// return res.redirect('/user/profile');
 				console.log('la contraseña es válida por email');
-				return res.send('credenciales válidas')
-			} 
+				return res.send('credenciales válidas por email')
+			}
+			} else if (userToLoginByUserName){
+				let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLoginByUserName.password);
+				if (isOkThePassword) {
+					// delete userToLogin.password;
+					// req.session.userLogged = userToLogin;
+	
+					// if(req.body.remember_user) {
+					// 	res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+					// }
+	
+					// return res.redirect('/user/profile');
+					console.log('la contraseña es válida por userName');
+					return res.send('credenciales válidas por userName')
+			}
 			// return res.render('login', {
 			// 	errors: {
 			// 		email: {
@@ -44,5 +59,6 @@ loginProcess: (req, res) => {
 		// });
 	},
 }
+
 
 module.exports = controller

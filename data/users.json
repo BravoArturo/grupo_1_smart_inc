@@ -52,5 +52,14 @@
   "password": "$2a$12$hAEbILNX/9gkrc8siwOekuOn7ucSGH/ajz.jpRv0HuoqzIxff3vgW",
   "avatar": "/images/users/1669130335124_img.png",
   "category": "Cliente"
+ },
+ {
+  "id": 6,
+  "fullName": " nombre de prueba2",
+  "userName": "userprove2",
+  "email": "email2@hotmail.com",
+  "password": "$2a$12$Qr5JVB3HdxcL/.DglaJS3OuOhXM.zwHiVi01pGO8L7uHM7zA9uM6C",
+  "avatar": "/images/users/1669165579164_img.png",
+  "category": "Cliente"
  }
 ]
