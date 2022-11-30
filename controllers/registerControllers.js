@@ -34,11 +34,12 @@ const registerController = {
           ? req.session.user
           : {
               id: '',
-              name: '',
-              description: '',
-              image: '',
+              fullName: '',
+              userName: '',
+              email: '',
+              password: '',
+              avatar: '',
               category: '',
-              price: '',
               direction: '',
             },
       })
@@ -53,11 +54,12 @@ const registerController = {
           ? req.session.user
           : {
               id: '',
-              name: '',
-              description: '',
-              image: '',
+              fullName: '',
+              userName: '',
+              email: '',
+              password: '',
+              avatar: '',
               category: '',
-              price: '',
               direction: '',
             },
         errors: {
@@ -75,11 +77,12 @@ const registerController = {
           ? req.session.user
           : {
               id: '',
-              name: '',
-              description: '',
-              image: '',
+              fullName: '',
+              userName: '',
+              email: '',
+              password: '',
+              avatar: '',
               category: '',
-              price: '',
               direction: '',
             },
         errors: {

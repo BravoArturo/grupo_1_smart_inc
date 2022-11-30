@@ -31,11 +31,12 @@ const controller = {
         ? req.session.user
         : {
             id: '',
-            name: '',
-            description: '',
-            image: '',
+            fullName: '',
+            userName: '',
+            email: '',
+            password: '',
+            avatar: '',
             category: '',
-            price: '',
             direction: '',
           },
     })
