@@ -6,7 +6,19 @@ const publicPath = path.join(__dirname, '/public')
 
 const controller = {
   index: (req, res) => {
-    res.render('login')
+    res.render('login', {
+      user: req.session.user
+        ? req.session.user
+        : {
+            id: '',
+            name: '',
+            description: '',
+            image: '',
+            category: '',
+            price: '',
+            direction: '',
+          },
+    })
   },
   loginProcess: (req, res) => {
     let userToLogin = User.findByField('email', req.body.emailOrUserName)
