@@ -3,12 +3,16 @@
 <%- include('./partials/head', {title: 'Login', css:["/css/loginstyle.css"] })  %>
 
 <body>
-  <%- include('./partials/header')  %>
+  <%- include('./partials/header',{user: locals.user}) %>
   <!--esto es el partial que remplaza a todo el header -->
   <main>
     <form class="form-login" method="POST">
       <input class="input-user-login" type="text" name="emailOrUserName" placeholder="Ingresa email o nombre de usuari@" />
       <input class="input-pass-login" type="password" name="password" placeholder="Ingresa password" />
+      <div>
+        <input type="checkbox" id="remember_user" name="remember_user">
+        <label for="remember_user">Recordar mi usuario</label>
+      </div>
       <button type="submit" class="login-boton">Entrar</button>
       <a class="olviste-contraseña" href="/">¿Olvidaste tu contraseña?</a>
       <a href="/register"> Crea tu Cuenta</a>

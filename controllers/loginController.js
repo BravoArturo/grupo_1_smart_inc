@@ -33,12 +33,14 @@ const controller = {
         userToLogin.password,
       )
       if (isOkThePassword) {
-        // delete userToLogin.password;
-        // req.session.userLogged = userToLogin;
+        // delete userToLogin.password
+        req.session.userLogged = userToLogin
 
-        // if(req.body.remember_user) {
-        // 	res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-        // }
+        if (req.body.remember_user) {
+          res.cookie('rememberUser', req.body.emailOrUserName, {
+            maxAge: 1000 * 60 * 60,
+          })
+        }
 
         // return res.redirect('/user/profile');
         console.log('la contraseña es válida por email')
@@ -51,12 +53,14 @@ const controller = {
         userToLoginByUserName.password,
       )
       if (isOkThePassword) {
-        // delete userToLogin.password;
-        // req.session.userLogged = userToLogin;
+        // delete userToLogin.password
+        req.session.userLogged = userToLoginByUserName
 
-        // if(req.body.remember_user) {
-        // 	res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-        // }
+        if (req.body.remember_user) {
+          res.cookie('rememberUser', req.body.emailOrUserName, {
+            maxAge: 1000 * 60 * 60,
+          })
+        }
 
         req.session.user = userToLoginByUserName
         // return res.redirect('/user/profile');

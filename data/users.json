@@ -16,7 +16,8 @@
     "email": "leo.gonzalez@gmail.com",
     "password": "$2a$12$UgaiSvKR7gMVrEZ0pzOQ5u3/FP05LmqJa0xAvrSKGRx13pHoc1DBy",
     "avatar": "/images/users/avatarLeo.jpg",
-    "category": "Cliente"
+    "category": "Cliente",
+    "direction": "Avenida siempre viva"
   },
   {
     "id": 2,
@@ -25,7 +26,8 @@
     "email": "martin.diaz@gmail.com",
     "password": "$2a$12$jymBe4IWJLUOyBM2vUHOh.qNeI9nJh/PU1CCMDRLdNp9ulvBwYx7K",
     "avatar": "/images/users/avatarMartin.jpg",
-    "category": "Cliente"
+    "category": "Cliente",
+    "direction": "Avenida siempre viva"
   },
   {
     "id": 3,
@@ -34,7 +36,8 @@
     "email": "fede.gonzalez@gmail.com",
     "password": "$2a$12$r.kgJVho5xvD7nrrafC4qOXXNmxY.plfppA6/MZ1xXPWOXZj4BcNS",
     "avatar": "/images/users/avatarFede.jpg",
-    "category": "Cliente"
+    "category": "Cliente",
+    "direction": "Avenida siempre viva"
   },
   {
     "id": 4,
@@ -43,7 +46,8 @@
     "email": "hernan.gomez@gmail.com",
     "password": "$2a$12$WMfg6bwM5hxnTE47VDnF3.LitjA2sRjY/1pvTHKzk5byQV1ua6O42",
     "avatar": "/images/users/avatarHernan.jpg",
-    "category": "Cliente"
+    "category": "Cliente",
+    "direction": "Avenida siempre viva"
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "email": "email@hotmail.com",
     "password": "$2a$12$hAEbILNX/9gkrc8siwOekuOn7ucSGH/ajz.jpRv0HuoqzIxff3vgW",
     "avatar": "/images/users/1669130335124_img.png",
-    "category": "Cliente"
+    "category": "Cliente",
+    "direction": "Avenida siempre viva"
   },
   {
     "id": 6,
@@ -61,6 +66,7 @@
     "email": "email2@hotmail.com",
     "password": "$2a$12$Qr5JVB3HdxcL/.DglaJS3OuOhXM.zwHiVi01pGO8L7uHM7zA9uM6C",
     "avatar": "/images/users/1669165579164_img.png",
-    "category": "Cliente"
+    "category": "Cliente",
+    "direction": "Avenida siempre viva"
   }
 ]
