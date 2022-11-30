@@ -10,9 +10,7 @@ const routeProduct = require('./routes/product')
 const routeRegister = require('./routes/register')
 const session = require('express-session')
 const cookies = require('cookie-parser') //libreria cookie-parser
-const session = require('express-session') //libreria express-session
 
-app.use(session({ secret: 'Secret message' }))
 app.set('view engine', 'ejs')
 app.use(express.static(publicPath))
 app.use(express.urlencoded({ extended: false }))
