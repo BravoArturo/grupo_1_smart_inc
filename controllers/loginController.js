@@ -75,7 +75,7 @@ const controller = {
       // 		}
       // 	}
       // });
-      return res.send('credenciales inválidas')
+      return res.redirect('/login')
     }
 
     // return res.render('login', {
