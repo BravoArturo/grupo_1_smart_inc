@@ -132,6 +132,11 @@ main{
     color: var(--color5);
 }
 
+.text-danger{
+    color: red;
+    font-weight: bold;
+}
+
 /* VERSIÓN TABLET:768PX  */
 @media(min-width:768px) {
     .input-name{

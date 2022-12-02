@@ -25,7 +25,21 @@ const productos = [
 
 const controller = {
   index: (req, res) => {
-    res.render('shoppingCar', { productos: productos })
+    res.render('shoppingCar', {
+      productos: productos,
+      user: req.session.user
+        ? req.session.user
+        : {
+            id: '',
+            fullName: '',
+            userName: '',
+            email: '',
+            password: '',
+            avatar: '',
+            category: '',
+            direction: '',
+          },
+    })
   },
 }
 

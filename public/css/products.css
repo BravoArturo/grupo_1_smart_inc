@@ -1,3 +1,21 @@
+/* SELECTOR UNIVERSAL */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* DEFINICIÓN DE COLORES */
+
+:root{
+    --color1: #01010d;
+    --color2: #5c6a73;
+    --color3: #9fa4a6;
+    --color4: #383e40;
+    --color5: #d9d8d7;
+    --fondo-logo: #242323;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -7,7 +25,7 @@ body{
 }
 
 .productsContainer{
-    background-color: #9fa4a6;
+    background-color: var(--color3);
     width: 100%;
     height: 70vh;
     margin-bottom: 3%;
@@ -56,7 +74,7 @@ body{
 button{
     padding: 10px;
     border-radius: 2vw;
-    background-color: #d9d8d7;
+    background-color: var(--color5);
     color: #242323;
     cursor: pointer;
     width: 90%;

@@ -4,7 +4,7 @@
   ['/css/products.css']}) %>
 
 <body>
-  <%- include('./partials/header') %>
+  <%- include('./partials/header',{user: locals.user}) %>
   <main>
     <% if(locals && locals.products){ %><% locals.products.map((p, index)=>{%>
     <div class="productsContainer">

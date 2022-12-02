@@ -8,10 +8,36 @@ const controller = {
     products = JSON.parse(products)
     res.render('products', {
       products,
+
+      user: req.session.user
+        ? req.session.user
+        : {
+            id: '',
+            fullName: '',
+            userName: '',
+            email: '',
+            password: '',
+            avatar: '',
+            category: '',
+            direction: '',
+          },
     })
   },
   add: (req, res) => {
-    res.render('editAddProduct')
+    res.render('editAddProduct', {
+      user: req.session.user
+        ? req.session.user
+        : {
+            id: '',
+            fullName: '',
+            userName: '',
+            email: '',
+            password: '',
+            avatar: '',
+            category: '',
+            direction: '',
+          },
+    })
   },
   edit: (req, res) => {
     let products = fs.readFileSync(productsPath, 'utf-8')
@@ -21,6 +47,18 @@ const controller = {
     res.render('editAddProduct', {
       id: req.params.id,
       product: productsToUpdate[0],
+      user: req.session.user
+        ? req.session.user
+        : {
+            id: '',
+            fullName: '',
+            userName: '',
+            email: '',
+            password: '',
+            avatar: '',
+            category: '',
+            direction: '',
+          },
     })
   },
   productDetail: (req, res) => {
@@ -30,6 +68,18 @@ const controller = {
     // console.log(productsToUpdate[0])
     res.render('productDetail', {
       product: productsToUpdate[0],
+      user: req.session.user
+        ? req.session.user
+        : {
+            id: '',
+            fullName: '',
+            userName: '',
+            email: '',
+            password: '',
+            avatar: '',
+            category: '',
+            direction: '',
+          },
     })
   },
   store: (req, res) => {

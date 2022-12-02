@@ -1,3 +1,21 @@
+/* DEFINICIÓN DE COLORES */
+
+:root{
+    --color1: #01010d;
+    --color2: #5c6a73;
+    --color3: #9fa4a6;
+    --color4: #383e40;
+    --color5: #d9d8d7;
+    --fondo-logo: #242323;
+}
+
+/* SELECTOR UNIVERSAL */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body{
     height: 100vh;
     box-sizing: border-box;
@@ -12,29 +30,31 @@ main{
     flex-direction: column;
     height: 100%;
     border-radius: 10px;
-    background-color: #9fa4a6;
+    background-color: var(--color3);
     width: 100%;
     border-radius: 0.5vw;
     align-items: center;
     justify-content: space-around;
  }
- .formEdit{
+
+.formEdit{
     display: flex;
     flex-direction: column;
     height: 90%;
     border-radius: 10px;
-    background-color: #9fa4a6;
+    background-color: var(--color3);
     width: 100%;
     border-radius: 0.5vw;
     align-items: center;
     justify-content: space-around;
  }
- .formDelete{
+
+.formDelete{
     display: flex;
     flex-direction: column;
     height: 10%;
     border-radius: 10px;
-    background-color: #9fa4a6;
+    background-color: var(--color3);
     width: 100%;
     border-radius: 0.5vw;
     align-items: center;
@@ -44,7 +64,7 @@ main{
     padding: 2%;
     border: 2px solid #ffffff;
     border-radius: 2vw;
-    background-color: #d9d8d7;
+    /* background-color: #d9d8d7; */
     cursor: pointer;
     width: 80%;
 }
@@ -66,8 +86,8 @@ form label {
 form button{
     padding: 10px;
     border-radius: 2vw;
-    background-color: #d9d8d7;
-    color: #242323;
+    background-color: var(--color5);
+    color: var(--fondo-logo);
     cursor: pointer;
     width: 80%;
     border: 2px solid #ffffff;
