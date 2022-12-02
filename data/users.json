@@ -1,72 +1,81 @@
 [
-  {
-    "id": 0,
-    "fullName": "Nicolas Heredia",
-    "userName": "nicoHer",
-    "email": "nico.heredia@gmail.com",
-    "password": "$2a$12$OvGIZwTOkgQdVT4VfAgeZeQRm3yfbZNb7mhgbRRGr6A9s6.4tqOP6",
-    "avatar": "/images/users/avatarNico.jpg",
-    "category": "Admin",
-    "direction": "Avenida siempre viva"
-  },
-  {
-    "id": 1,
-    "fullName": "Leonardo Gonzalez",
-    "userName": "leoGon",
-    "email": "leo.gonzalez@gmail.com",
-    "password": "$2a$12$UgaiSvKR7gMVrEZ0pzOQ5u3/FP05LmqJa0xAvrSKGRx13pHoc1DBy",
-    "avatar": "/images/users/avatarLeo.jpg",
-    "category": "Cliente",
-    "direction": "Avenida siempre viva"
-  },
-  {
-    "id": 2,
-    "fullName": "Martin Diaz",
-    "userName": "martinDi",
-    "email": "martin.diaz@gmail.com",
-    "password": "$2a$12$jymBe4IWJLUOyBM2vUHOh.qNeI9nJh/PU1CCMDRLdNp9ulvBwYx7K",
-    "avatar": "/images/users/avatarMartin.jpg",
-    "category": "Cliente",
-    "direction": "Avenida siempre viva"
-  },
-  {
-    "id": 3,
-    "fullName": "Federico Gonzalez",
-    "userName": "fedeGonza",
-    "email": "fede.gonzalez@gmail.com",
-    "password": "$2a$12$r.kgJVho5xvD7nrrafC4qOXXNmxY.plfppA6/MZ1xXPWOXZj4BcNS",
-    "avatar": "/images/users/avatarFede.jpg",
-    "category": "Cliente",
-    "direction": "Avenida siempre viva"
-  },
-  {
-    "id": 4,
-    "fullName": "Hernan Gomez",
-    "userName": "hernanGo",
-    "email": "hernan.gomez@gmail.com",
-    "password": "$2a$12$WMfg6bwM5hxnTE47VDnF3.LitjA2sRjY/1pvTHKzk5byQV1ua6O42",
-    "avatar": "/images/users/avatarHernan.jpg",
-    "category": "Cliente",
-    "direction": "Avenida siempre viva"
-  },
-  {
-    "id": 5,
-    "fullName": " nombre de prueba",
-    "userName": "userprove",
-    "email": "email@hotmail.com",
-    "password": "$2a$12$hAEbILNX/9gkrc8siwOekuOn7ucSGH/ajz.jpRv0HuoqzIxff3vgW",
-    "avatar": "/images/users/1669130335124_img.png",
-    "category": "Cliente",
-    "direction": "Avenida siempre viva"
-  },
-  {
-    "id": 6,
-    "fullName": " nombre de prueba2",
-    "userName": "userprove2",
-    "email": "email2@hotmail.com",
-    "password": "$2a$12$Qr5JVB3HdxcL/.DglaJS3OuOhXM.zwHiVi01pGO8L7uHM7zA9uM6C",
-    "avatar": "/images/users/1669165579164_img.png",
-    "category": "Cliente",
-    "direction": "Avenida siempre viva"
-  }
+ {
+  "id": 0,
+  "fullName": "Nicolas Heredia",
+  "userName": "nicoHer",
+  "email": "nico.heredia@gmail.com",
+  "password": "$2a$12$OvGIZwTOkgQdVT4VfAgeZeQRm3yfbZNb7mhgbRRGr6A9s6.4tqOP6",
+  "avatar": "/images/users/avatarNico.jpg",
+  "category": "Admin",
+  "direction": "Avenida siempre viva"
+ },
+ {
+  "id": 1,
+  "fullName": "Leonardo Gonzalez",
+  "userName": "leoGon",
+  "email": "leo.gonzalez@gmail.com",
+  "password": "$2a$12$UgaiSvKR7gMVrEZ0pzOQ5u3/FP05LmqJa0xAvrSKGRx13pHoc1DBy",
+  "avatar": "/images/users/avatarLeo.jpg",
+  "category": "Cliente",
+  "direction": "Avenida siempre viva"
+ },
+ {
+  "id": 2,
+  "fullName": "Martin Diaz",
+  "userName": "martinDi",
+  "email": "martin.diaz@gmail.com",
+  "password": "$2a$12$jymBe4IWJLUOyBM2vUHOh.qNeI9nJh/PU1CCMDRLdNp9ulvBwYx7K",
+  "avatar": "/images/users/avatarMartin.jpg",
+  "category": "Cliente",
+  "direction": "Avenida siempre viva"
+ },
+ {
+  "id": 3,
+  "fullName": "Federico Gonzalez",
+  "userName": "fedeGonza",
+  "email": "fede.gonzalez@gmail.com",
+  "password": "$2a$12$r.kgJVho5xvD7nrrafC4qOXXNmxY.plfppA6/MZ1xXPWOXZj4BcNS",
+  "avatar": "/images/users/avatarFede.jpg",
+  "category": "Cliente",
+  "direction": "Avenida siempre viva"
+ },
+ {
+  "id": 4,
+  "fullName": "Hernan Gomez",
+  "userName": "hernanGo",
+  "email": "hernan.gomez@gmail.com",
+  "password": "$2a$12$WMfg6bwM5hxnTE47VDnF3.LitjA2sRjY/1pvTHKzk5byQV1ua6O42",
+  "avatar": "/images/users/avatarHernan.jpg",
+  "category": "Cliente",
+  "direction": "Avenida siempre viva"
+ },
+ {
+  "id": 5,
+  "fullName": " nombre de prueba",
+  "userName": "userprove",
+  "email": "email@hotmail.com",
+  "password": "$2a$12$hAEbILNX/9gkrc8siwOekuOn7ucSGH/ajz.jpRv0HuoqzIxff3vgW",
+  "avatar": "/images/users/1669130335124_img.png",
+  "category": "Cliente",
+  "direction": "Avenida siempre viva"
+ },
+ {
+  "id": 6,
+  "fullName": " nombre de prueba2",
+  "userName": "userprove2",
+  "email": "email2@hotmail.com",
+  "password": "$2a$12$Qr5JVB3HdxcL/.DglaJS3OuOhXM.zwHiVi01pGO8L7uHM7zA9uM6C",
+  "avatar": "/images/users/1669165579164_img.png",
+  "category": "Cliente",
+  "direction": "Avenida siempre viva"
+ },
+ {
+  "id": 7,
+  "fullName": "Arturo Matias Bravo",
+  "userName": "amb19",
+  "email": "aarturoo97@gmail.com",
+  "password": "$2a$12$C.4LKeFYkzb4EtAPnfBgGOWhT1Cv1r55RVhwdnhz8w6gThWyPraIC",
+  "avatar": "/images/users/1670003013753_img.png",
+  "category": "Cliente"
+ }
 ]

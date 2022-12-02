@@ -1,4 +1,5 @@
 const path = require('path')
+const fs = require('fs')
 const bcryptjs = require('bcryptjs')
 const { validationResult } = require('express-validator')
 const User = require('../models/User')
@@ -25,8 +26,9 @@ const registerController = {
     // console.log(errorsConsole);
     // console.log(resultValidation);
     // console.log(req.body);
-
+    console.log('ERRORES', resultValidation.errors)
     if (resultValidation.errors.length > 0) {
+      fs.unlinkSync(req.file.path)
       return res.render('register', {
         errors: resultValidation.mapped(),
         oldData: req.body,

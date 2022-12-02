@@ -8,7 +8,7 @@
         <% if (locals.user.avatar) { %>
         <li><a href="../login"><img class="logo-smart-inc" src=<%= locals.user.avatar %> alt="Logo Smart Inc"><%= locals.user.fullName %></a></li>
         <% }else{ %>
-        <li><a href="../login"><i class="fa-solid fa-user"></i><%= locals.user.fullName %></a></li>
+        <li><a href="../login"><i class="fa-solid fa-user"></i><%= locals.user.fullName ? locals.user.fullName : 'Mi Cuenta' %></a></li>
         <% } %>
 
         <li><a href='../shoppingCar'><i class="fa-solid fa-cart-shopping"></i></a></li>
