@@ -43,10 +43,11 @@ main{
     height: 100%;
     border-radius: 10px;
     background-color: var(--color3);
-    width: 100%;
+    width: 80%;
     border-radius: 0.5vw;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 0px 0px 10px 0px black;
 }
 .input-user-login,.input-pass-login{
     padding: 10px;

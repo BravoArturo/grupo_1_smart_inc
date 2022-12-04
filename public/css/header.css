@@ -27,6 +27,7 @@ header div nav {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 header div nav ul {
@@ -47,6 +48,8 @@ header div nav ul.navegation-bar li a {
     font-weight: bold;
     text-decoration: none;
     font-size: 3vw;
+    position: relative;
+    top: -10px;
 }
 
 header div.search-bar {
@@ -91,4 +94,11 @@ header div.ubication p {
 .logo-smart-inc{
     /* border: 2px green solid; */
     width: 33vw;
+}
+
+.new-avatar{
+    width: 28%;
+    border-radius: 10%;
+    position: relative;
+    bottom: -10px;
 }
