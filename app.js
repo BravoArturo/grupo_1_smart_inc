@@ -3,6 +3,8 @@ const path = require('path')
 const app = express()
 const methodOVerride = require('method-override')
 const publicPath = path.join(__dirname, '/public')
+
+/*================ROUTERS REQUIRE=================*/
 const routerLogin = require('./routes/loginRoute')
 const routeIndex = require('./routes/index')
 const routeShoppingCar = require('./routes/shoppingCar')
@@ -30,7 +32,9 @@ app.use('/products', routeProduct)
 app.use('/', routeIndex)
 app.use('/shoppingCar', routeShoppingCar)
 app.use('/register', routeRegister)
-//testttt
+
+
+/*==============SERVIDOR=================*/
 app.use((req, res, next) => {
   res.status(404).render('notFound')
   next()
