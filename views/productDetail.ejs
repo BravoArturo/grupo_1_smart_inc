@@ -6,7 +6,7 @@
 
 <body>
   <!--[↓ HEADER ↓]-->
-  <%- include('./partials/header') %>
+  <%- include('./partials/header',{user: locals.user}) %>
   <!--[↑ HEADER ↑]-->
   <main>
     <div class="titulo-tv">
@@ -17,7 +17,7 @@
       <img src="<%= locals.product.image %> ">
     </div>
     <div class="contenedor-price-button">
-      <p class="precio"><%= locals.product.price  %>  </p>
+      <p class="precio"><%= locals.product.price  %> </p>
       <button type="button">ADD TO CARR</button>
     </div>
     <h3>Descripción</h3>

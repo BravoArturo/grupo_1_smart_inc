@@ -2,7 +2,21 @@ const path = require('path')
 
 const indexController = {
   index: (req, res) => {
-    res.render('index')
+    console.log(req.session.user)
+    res.render('index', {
+      user: req.session.user
+        ? req.session.user
+        : {
+            id: '',
+            fullName: '',
+            userName: '',
+            email: '',
+            password: '',
+            avatar: '',
+            category: '',
+            direction: '',
+          },
+    })
   },
 }
 

@@ -3,27 +3,47 @@
 <%- include('./partials/head', {title: 'Register', css:["/css/register.css"] })  %>
 
 <body>
-<%- include('./partials/header')  %>
-<!--esto es el partial que remplaza a todo el header -->
-<main>
+  <%- include('./partials/header',{user: locals.user}) %>
+  <!--esto es el partial que remplaza a todo el header -->
+  <main>
     <h2 class="register-label">REGISTRATE</h2>
     <div class="father-form-register">
-    <form class="form-register" action="/index.html" method="Get">
-        <input class="input-name" type="text" name="Nombre" placeholder="Ingresa tu nombre" required />
-        <input class="input-user" type="text" name="Usuari@" placeholder="Ingresa tu usuari@" required />
-        <input class="input-email" type="email" name="email" placeholder="Ingresa tu email" required />
-        <input class="input-password" type="password" name="Password" placeholder="Contraseña" required />
-        <button type="submit" class="register-button" action="/index.html" method="get">Confirmar</button>
-        <button type="submit" class="cancel-button" action="/" method=" Get">Cancelar</button>
-    </form>
+      <form class="form-register" action="/register" method="POST" enctype="multipart/form-data">
+        <input class="input-name" type="text" name="fullName" placeholder="Ingresa tu nombre" value="<%= locals.oldData ? oldData.fullName : '' %>" />
+        <% if (locals.errors && errors.fullName) { %>
+        <div class="text-danger"><%= errors.fullName.msg %> </div>
+        <% } %>
+        <input class="input-user" type="text" name="userName" placeholder="Ingresa tu usuari@" value="<%= locals.oldData ? oldData.userName : '' %>" />
+        <% if (locals.errors && errors.userName) { %>
+        <div class="text-danger"><%= errors.userName.msg %> </div>
+        <% } %>
+        <input class="input-email" type="email" name="email" placeholder="Ingresa tu email" value=" <%= locals.oldData ? oldData.email : '' %>" />
+        <% if (locals.errors && errors.email) { %>
+        <div class="text-danger"><%= errors.email.msg %> </div>
+        <% } %>
+        <input class="input-password" type="password" name="password" placeholder="Contraseña" />
+        <% if (locals.errors && errors.password) { %>
+        <div class="text-danger"><%= errors.password.msg %> </div>
+        <% } %>
+        <label for="image">Inserte su imagen de usuari@</label>
+        <input class="input-file" type="file" name="avatar" id="image">
+        <% if (locals.errors && errors.avatar) { %>
+        <div class="text-danger">
+          <%= errors.avatar.msg %>
+        </div>
+        <% } %>
+
+        <button type="submit" class="register-button">Confirmar</button>
+        <!-- <button type="submit" class="cancel-button">Cancelar</button> -->
+      </form>
     </div>
-</main>
+  </main>
 
 
 
 
-<%- include('./partials/footer', {title: ''})  %>
-<!--esto es el partial que remplaza a todo el footer -->
+  <%- include('./partials/footer', {title: ''})  %>
+  <!--esto es el partial que remplaza a todo el footer -->
 </body>
 
 </html>
